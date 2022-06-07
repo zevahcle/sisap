@@ -1,0 +1,28 @@
+body {
+	background-color: #ccc;
+}
+
+#wrapperContedor {
+	background-color: white;
+	margin: 0 auto;
+	width: 960px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	min-height: 100%;
+}
+
+#contedor {
+	padding: 10px;
+}
+
+#contido {
+	float: left;
+	margin-left: 2px;
+	width: 698px;
+	background-color: #fcfcfc;
+	padding: 15px;
+}
+
+#footer {
+	clear:both;
+}

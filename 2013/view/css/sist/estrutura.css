@@ -1,0 +1,149 @@
+html {
+	overflow-y: scroll;
+}
+
+/* ===================		 Estilos de toda a páxina	=================== */
+body {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+color:#838383;
+background-color:#3d3d3d;
+}
+
+#privada{
+	font-size:12px;
+	}
+
+
+#wrapperContedor{
+	width: 928px;
+	border:none;
+	background-image:url("../../imaxes/sist/linea-wrapper.jpg");
+	background-repeat:repeat-y;
+	min-height: 600px;
+}
+
+.privada #wrapperContedor {
+	padding: 20px;
+	background-image: none;
+}
+
+	
+#publica #wrapperContedor2, #login #wrapperContedor2{
+	background-image:url("../../imaxes/sist/fondo-wrapper.jpg");
+	background-repeat:no-repeat;
+	background-color: transparent;
+}
+	
+#contedor{
+	padding: 0px 0 0px 0px;
+}
+
+#wrapperContido{
+	width: 705px;
+	float: left;
+	margin-left: 10px;
+}
+#contido{
+	width: 680px;
+	padding-left:0px;
+	font-size: 12px;
+	min-height:400px;
+	background-color: transparent;
+}	
+	
+.menu ul a, .menu ul a:active, .menu ul a:visited{
+	color:#6d6d6d;
+	}	
+/* ===================		 Estilos da cabeceira 		=================== */
+#publica #cabeceira, #login #cabeceira{
+	height: 210px;
+}
+
+#selectorCongreso{
+	margin-left:200px;
+	margin-top: 40px;
+}
+
+#dataContreso{
+	float:right;
+	margin-top:4px;
+	margin-right: 20px;
+}
+
+#logoSistedes{
+	float:left;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+#logoSistedes img {
+	margin-bottom: 7px;
+}
+
+#cabeceira #lugardata{
+	padding-top: 15px;
+	clear:both;
+	overflow:hidden;
+	padding-left:12px;
+	font-size: 18px;
+}
+
+#cabeceira #lugardata .anoJornadas{
+	color:#000;
+	}
+
+
+	
+#selectorCongreso img{
+	padding: 0px 26px 10px 12px;
+}
+
+#wrapperContido {
+	margin-top: 69px;
+}
+
+/* ===================		 Estilos dependentes do congreso================== */
+
+
+h1, h2{
+	color:#0c2d72;
+	}
+
+.JISBD h1, .JISBD h2{
+	color:#007333;
+	}
+	
+.PROLE h1, .PROLE h2{
+	color:#3e0073;
+	}
+	
+.JCIS h1, .JCIS h2{
+	color:#b3b500;
+	}
+	
+#footer {
+	margin: 0 auto;
+	width: 927px;
+	border-left: 1px solid #3D3D3D;
+	font-size: 10px;
+	text-align: right;
+}
+
+#footer a {
+	text-decoration: none;
+}
+
+div.patrocinadores {
+	margin: 40px 0;
+	text-align: center;
+}
+
+div.patrocinadores img {
+	margin-top: 10px;
+}
+
+div.patrocinadores h2 {
+	font-size: 1em;
+	color: #38606f;
+}

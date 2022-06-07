@@ -1,0 +1,41 @@
+/** Estilos para os textos de información */
+
+a.tooltip {
+	background : #6699FF;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	padding: 2px 4px;
+}
+
+a.tooltip span {
+	display: none;
+}
+
+div.contidoTooltip {
+	position: absolute;
+	display: none;
+	
+	float: left;
+	max-width: 200px;
+	
+	padding : 2px 10px;
+	background : #DDEEFF;
+	 
+	border : 1px solid #6699FF; 
+	color : #2F368A;
+	text-decoration : none;
+}
+
+div.tooltipObrigatorio {
+	border: 1px solid #F57E2A;
+	background-color: #F2EDC2;
+	color: #F57E2A;
+}
+
+a.marcaObrigatorio {
+	background-color: transparent;
+	color: red;
+	font-weight: bold;
+	padding: 4px 2px;
+}

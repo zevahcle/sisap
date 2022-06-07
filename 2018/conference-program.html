@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SISAP 2018 – International Conference on Similarity Search and Applications</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="bgchange.js" type="text/javascript"></script> <noscript>
+		<style>#header{background-image:url("bilderpool/cathedra-lima.jpg");}</style>
+
+<style>
+<!--table
+  {mso-displayed-decimal-separator:"\.";
+  mso-displayed-thousand-separator:"\,";}
+@page
+  {margin:.75in .7in .75in .7in;
+  mso-header-margin:.3in;
+  mso-footer-margin:.3in;}
+.font6
+  {color:windowtext;
+  font-size:11.0pt;
+  font-weight:400;
+  font-style:normal;
+  text-decoration:none;
+  font-family:Calibri, sans-serif;
+  mso-font-charset:0;}
+.font7
+  {color:windowtext;
+  font-size:11.0pt;
+  font-weight:700;
+  font-style:normal;
+  text-decoration:none;
+  font-family:Calibri, sans-serif;
+  mso-font-charset:0;}
+.style0
+  {mso-number-format:General;
+  text-align:general;
+  vertical-align:bottom;
+  white-space:nowrap;
+  mso-rotate:0;
+  mso-background-source:auto;
+  mso-pattern:auto;
+  color:black;
+  font-size:11.0pt;
+  font-weight:400;
+  font-style:normal;
+  text-decoration:none;
+  font-family:Calibri, sans-serif;
+  mso-font-charset:0;
+  border:none;
+  mso-protection:locked visible;
+  mso-style-name:Normal;
+  mso-style-id:0;}
+td
+  {mso-style-parent:style0;
+  padding-top:1px;
+  padding-right:1px;
+  padding-left:1px;
+  mso-ignore:padding;
+  color:black;
+  font-size:11.0pt;
+  font-weight:400;
+  font-style:normal;
+  text-decoration:none;
+  font-family:Calibri, sans-serif;
+  mso-font-charset:0;
+  mso-number-format:General;
+  text-align:general;
+  vertical-align:bottom;
+  border:none;
+  mso-background-source:auto;
+  mso-pattern:auto;
+  mso-protection:locked visible;
+  white-space:nowrap;
+  mso-rotate:0;}
+.xl65
+  {mso-style-parent:style0;
+  text-align:left;}
+.xl66
+  {mso-style-parent:style0;
+  font-weight:700;
+  text-align:center;}
+.xl67
+  {mso-style-parent:style0;
+  font-weight:700;}
+.xl68
+  {mso-style-parent:style0;
+  font-weight:700;
+  text-align:center;
+  background:#B4C6E7;
+  mso-pattern:black none;}
+.xl69
+  {mso-style-parent:style0;
+  font-weight:700;
+  background:#B4C6E7;
+  mso-pattern:black none;}
+.xl70
+  {mso-style-parent:style0;
+  color:windowtext;}
+.xl71
+  {mso-style-parent:style0;
+  text-align:left;
+  vertical-align:middle;
+  background:#BFBFBF;
+  mso-pattern:black none;
+  white-space:normal;}
+.xl72
+  {mso-style-parent:style0;
+  text-align:left;
+  vertical-align:middle;
+  background:#DDEBF7;
+  mso-pattern:black none;
+  white-space:normal;}
+.xl73
+  {mso-style-parent:style0;
+  text-align:center;
+  vertical-align:middle;
+  white-space:normal;}
+.xl74
+  {mso-style-parent:style0;
+  font-weight:700;
+  text-align:left;
+  vertical-align:middle;
+  background:#C6E0B4;
+  mso-pattern:black none;
+  white-space:normal;}
+.xl75
+  {mso-style-parent:style0;
+  font-weight:700;
+  text-align:left;
+  vertical-align:middle;
+  background:#F8CBAD;
+  mso-pattern:black none;
+  white-space:normal;}
+.xl76
+  {mso-style-parent:style0;
+  text-align:left;
+  vertical-align:middle;
+  background:#8EA9DB;
+  mso-pattern:black none;
+  white-space:normal;}
+.xl77
+  {mso-style-parent:style0;
+  text-align:left;
+  vertical-align:middle;
+  background:#FFD966;
+  mso-pattern:black none;
+  white-space:normal;}
+.xl78
+  {mso-style-parent:style0;
+  font-weight:700;
+  text-align:left;
+  background:#B4C6E7;
+  mso-pattern:black none;}
+.xl79
+  {mso-style-parent:style0;
+  text-align:left;
+  vertical-align:middle;
+  background:#C6E0B4;
+  mso-pattern:black none;
+  white-space:normal;}
+.xl80
+  {mso-style-parent:style0;
+  text-align:left;
+  vertical-align:middle;
+  background:#F8CBAD;
+  mso-pattern:black none;
+  white-space:normal;}
+.xl81
+  {mso-style-parent:style0;
+  text-align:left;
+  vertical-align:middle;
+  white-space:normal;}
+.xl82
+  {mso-style-parent:style0;
+  white-space:normal;}
+.xl83
+  {mso-style-parent:style0;
+  mso-number-format:"Short Time";
+  text-align:left;}
+.xl84
+  {mso-style-parent:style0;
+  font-weight:700;
+  text-align:left;
+  vertical-align:middle;
+  background:#DDEBF7;
+  mso-pattern:black none;
+  white-space:normal;}
+.xl85
+  {mso-style-parent:style0;
+  font-weight:700;
+  text-align:left;
+  vertical-align:middle;
+  background:#FFD966;
+  mso-pattern:black none;
+  white-space:normal;}
+.xl86
+  {mso-style-parent:style0;
+  font-weight:700;
+  text-align:left;
+  vertical-align:middle;
+  background:#8EA9DB;
+  mso-pattern:black none;
+  white-space:normal;}
+.xl87
+  {mso-style-parent:style0;
+  font-weight:700;
+  text-align:left;
+  vertical-align:middle;
+  background:#BFBFBF;
+  mso-pattern:black none;
+  white-space:normal;}
+.xl88
+  {mso-style-parent:style0;
+  background:#F8CBAD;
+  mso-pattern:black none;
+  white-space:normal;}
+.xl89
+  {mso-style-parent:style0;
+  background:#DDEBF7;
+  mso-pattern:black none;
+  white-space:normal;}
+.xl90
+  {mso-style-parent:style0;
+  background:#C6E0B4;
+  mso-pattern:black none;
+  white-space:normal;}
+.xl91
+  {mso-style-parent:style0;
+  background:#8EA9DB;
+  mso-pattern:black none;
+  white-space:normal;}
+.xl92
+  {mso-style-parent:style0;
+  background:#FFD966;
+  mso-pattern:black none;
+  white-space:normal;}
+.xl93
+  {mso-style-parent:style0;
+  background:#BFBFBF;
+  mso-pattern:black none;
+  white-space:normal;}
+.xl94
+  {mso-style-parent:style0;
+  vertical-align:middle;}
+.xl95
+  {mso-style-parent:style0;
+  vertical-align:middle;
+  white-space:normal;}
+.xl96
+  {mso-style-parent:style0;
+  font-weight:700;
+  vertical-align:middle;}
+.xl97
+  {mso-style-parent:style0;
+  mso-number-format:"Short Time";
+  text-align:left;
+  vertical-align:middle;}
+.xl98
+  {mso-style-parent:style0;
+  font-size:9.0pt;
+  text-align:left;
+  white-space:normal;}
+.xl99
+  {mso-style-parent:style0;
+  font-size:9.0pt;
+  text-align:left;}
+.xl100
+  {mso-style-parent:style0;
+  font-weight:700;
+  vertical-align:middle;
+  background:#BDD7EE;
+  mso-pattern:black none;}
+.xl101
+  {mso-style-parent:style0;
+  font-weight:700;
+  text-align:left;
+  vertical-align:middle;
+  background:#BDD7EE;
+  mso-pattern:black none;
+  white-space:normal;}
+.xl102
+  {mso-style-parent:style0;
+  text-align:left;
+  vertical-align:middle;
+  background:#BDD7EE;
+  mso-pattern:black none;
+  white-space:normal;}
+.xl103
+  {mso-style-parent:style0;
+  font-weight:700;
+  background:#BDD7EE;
+  mso-pattern:black none;}
+.xl104
+  {mso-style-parent:style0;
+  color:white;
+  text-align:left;
+  vertical-align:middle;
+  background:#404040;
+  mso-pattern:black none;
+  white-space:normal;}
+.xl105
+  {mso-style-parent:style0;
+  color:white;
+  font-weight:700;
+  text-align:left;
+  vertical-align:middle;
+  background:#404040;
+  mso-pattern:black none;
+  white-space:normal;}
+.xl106
+  {mso-style-parent:style0;
+  color:#1F497D;
+  vertical-align:middle;}
+-->
+</style>
+	</noscript> </head>
+
+<body onload="bgchanger()">
+  <div id="page">
+    <div id="header" class="header1">
+      <div class="bgimg" id="bgimg1"> </div>
+      <div class="bgimg" id="bgimg2"> </div>
+      <div id="logo">
+        <img src="images/avatar.png" alt="SISAP 2017">
+        <h1>SISAP 2018</h1>
+        <h1> </h1>
+        <h2>October 7-9&nbsp;</h2>
+        <h2>Lima, Perú</h2>
+      </div>
+    </div>
+    <div id="menu">
+      <h3>Main</h3>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="call-for-papers.html">Call for papers</a>
+        </li>
+        <li>
+          <a href="organization.html">Organization</a>
+        </li>
+        <li>
+          <a href="program-committee.html">Program committee</a>
+        </li>
+        <li>
+          <a href="keynote-speakers.html">Keynote speakers</a>
+        </li>
+      </ul>
+      <h3>Contributions</h3>
+      <ul>
+        <li>
+          <a href="submission-guidelines.html">Submission guidelines</a>
+        </li>
+        <li>
+          <a href="important-dates.html">Important dates</a>
+        </li>
+        <li>
+          <a href="accepted-papers.html">Accepted papers</a>
+        </li>
+        <li>
+          <a href="camera-ready-version.html">Camera-ready version</a>
+        </li>
+        <li>
+          <a href="conference-program.html">Conference program</a>
+        </li>
+        <li>
+          <a href="awards.html">Awards</a>
+        </li>
+      </ul>
+      <h3>Attendance</h3>
+      <ul>
+        <li>
+          <a href="conference-venue.html">Conference venue</a>
+        </li>
+        <li>
+          <a href="registration.html">Registration</a>
+        </li>
+        <li>
+          <a href="accommodation.html">Accommodation</a>
+        </li>
+        <li>
+          <a href="travel-information.html">Travel information</a>
+        </li>
+        <li>
+          <a href="photos.html">Photos</a>
+        </li>
+      </ul>
+      <h3>SISAP</h3>
+      <ul>
+        <li>
+          <a href="http://www.sisap.org/2017">SISAP 2017</a>
+        </li>
+        <li>
+          <a href="http://www.sisap.org/2016">SISAP 2016</a>
+        </li>
+        <li>
+          <a href="http://www.sisap.org/2015">SISAP 2015</a>
+        </li>
+        <li>
+          <a href="http://www.sisap.org/2014">SISAP 2014</a>
+        </li>
+        <li>
+          <a href="http://www.sisap.org/2013">SISAP 2013</a>
+        </li>
+        <li>
+          <a href="http://www.sisap.org/2012">SISAP 2012</a>
+        </li>
+        <li>
+          <a href="http://www.sisap.org">SISAP home</a>
+        </li>
+      </ul>
+    </div>
+    <div id="content">
+      <h1>Conference Program</h1>
+   
+<!--
+
+----------------
+    PROGRAM SUMMARY
+---------------
+
+-->
+
+<table border=0 cellpadding=0 cellspacing=0 width=1970 style='border-collapse:
+ collapse;table-layout:fixed;width:1477pt'>
+ <col class=xl67 width=120 style='mso-width-source:userset;mso-width-alt:3840;
+ width:90pt'>
+ <col width=316 style='mso-width-source:userset;mso-width-alt:10112;width:237pt'>
+ <col width=51 style='mso-width-source:userset;mso-width-alt:1621;width:38pt'>
+ <col class=xl65 width=115 style='mso-width-source:userset;mso-width-alt:3669;
+ width:86pt'>
+ <col width=648 style='mso-width-source:userset;mso-width-alt:20736;width:486pt'>
+ <col width=649 style='mso-width-source:userset;mso-width-alt:20778;width:487pt'>
+ <col width=71 style='width:53pt'>
+
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl67 style='height:15.0pt'></td>
+  <td class=xl105 width=316 style='width:237pt'><a href="#day1"><h2>October 7th</h2></a></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl82 width=120 style='height:15.0pt;width:90pt'>09:15-17:00</td>
+  <td>Registration</td>
+
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl82 width=120 style='height:15.0pt;width:90pt'>09:45-10:00</td>
+  <td>Opening</td>
+
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'>10:00-11:00</td>
+  <td class=xl81 width=316 style='width:237pt'>KeyNote 1: Hannan Samet (USA)</td>
+
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>11:00-13:00</td>
+  <td >Lunch Break</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>13:00-15:00</td>
+  <td class=xl103>Session 1: Metric Search</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>15:30-16:00<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td>Coffee Break</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>16:00-18:00</td>
+  <td class=xl103>Session 2: Visual Search</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>18:00-20:00</td>
+  <td >Reception and Poster Session <sup><a href="#poster">1</a></sup></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl67 style='height:15.0pt'></td>
+  <td style='mso-ignore:colspan'></td>
+
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl67 style='height:15.0pt'></td>
+  <td class=xl105 width=316 style='width:237pt'><a href="#day2"><h2>October 8th</h2></a></td>
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl82 width=120 style='height:15.0pt;width:90pt'>08:45-17:00</td>
+  <td>Registration</td>
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>9:30-10:30</td>
+  <td class=xl81 width=316 style='width:237pt'>KeyNote 2: Alistair Moffat</td>
+  
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>10:30-11:00</td>
+  <td class=xl81 width=316 style='width:237pt'>Coffee Break</td>
+  
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>11:00-12:30</td>
+  <td class=xl103>Session 3: Nearest Neighbor Queries</td>
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>12:30-14:00</td>
+  <td >Lunch Break</td>
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>14:00-15:30</td>
+  <td class=xl103>Session 4: Clustering and Outlier Detection</td>
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>15:30-16:00<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td >Coffee Break</td>
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>16:00-18:00</td>
+  <td class=xl103>Session 5: Graphs and Applications</td>
+
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>20:00<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td > Conference Dinner<sup><a href="#dinner">2</a></sup></td>
+ </tr>
+ 
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl67 style='height:15.0pt'></td>
+  <td class=xl105 width=316 style='width:237pt'><a href="#day3"><h2>October 9th</h2></a></td>
+  
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl82 width=120 style='height:15.0pt;width:90pt'>08:45-11:00</td>
+  <td >Registration</td>
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>9:00-10:00</td>
+  <td class=xl81 width=316 style='width:237pt'>KeyNote 3: Moshe Y. Vardi</td>
+
+  
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>10:00-10:10</td>
+  <td class=xl81 width=316 style='width:237pt'>Shared coffee break</td>
+ 
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>10:10-11:50<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td class=xl101 width=316 style='width:237pt'>Session 6: Shared Session
+  SISAP+SPIRE</td>
+  
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 style='height:15.0pt'>11:50-12:00<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td class=xl81 width=316 style='width:237pt'>Shared coffee break</td>
+
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl83 style='height:15.0pt'>12:00-13:00</td>
+  <td class=xl81 width=316 style='width:237pt'>SPIRE KeyNote: Nataša Pržulj</td>
+
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl83 style='height:15.0pt'>13:00-13:10</td>
+  <td class=xl81 width=316 style='width:237pt'>SISAP Closing</td>
+
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl83 style='height:15.0pt'>13:10-17:00</td>
+  <td class=xl81 width=316 style='width:237pt'>Conference Excursion (shared with SPIRE)</td>
+ </tr>
+</table>
+<P><H1>PROGRAM DETAILS</H1></P>
+
+
+
+
+
+
+<!--
+PROGRAMA
+-->
+
+<table border=0 cellpadding=0 cellspacing=0 style='border-collapse:
+ collapse;table-layout:fixed;'>
+ <col class=xl67 width=120 style='mso-width-source:userset;mso-width-alt:3840;
+ width:90pt'>
+ <col class=xl94 width=316 style='mso-width-source:userset;mso-width-alt:10112;
+ width:237pt'>
+ <col class=xl99 width=589 style='mso-width-source:userset;mso-width-alt:18858;
+ width:442pt'>
+ <col width=648 style='mso-width-source:userset;mso-width-alt:20736;width:486pt'>
+ <col width=649 style='mso-width-source:userset;mso-width-alt:20778;width:487pt'>
+ <col width=71 style='width:53pt'>
+
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl67 style='height:15.0pt'></td>
+  <td class=xl105 width=216 style='width:237pt'><h2 id="day1">October 7th</h2></td>
+  <td class=xl99></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl95 width=120 style='height:15.0pt;width:90pt'>09:15-17:00</td>
+  <td class=xl94>Registration</td>
+  <td class=xl99></td>
+
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl95 width=120 style='height:15.0pt;width:90pt'>09:45-10:00</td>
+  <td class=xl94>Opening</td>
+  <td class=xl99></td>
+
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'>10:00-11:00</td>
+  <td class=xl81 width=316 style='width:237pt'>KeyNote 1: Hannan Samet (USA)</td>
+  <td class=xl99>Reading News with Maps by Exploiting Spatial Synonyms</td>
+
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'>11:00-13:00</td>
+  <td class=xl94>Lunch Break</td>
+  <td class=xl99></td>
+
+ </tr>
+ <tr height=241 style='height:181.0pt'>
+  <td height=241 class=xl94 style='height:181.0pt'>13:00-15:00</td>
+  <td class=xl100><h3>Session 1: Metric Search</h3></td>
+  <td class=xl98 width=589 style='width:442pt'>
+    <b> Re-ranking Permutation-Based
+ Candidate Sets with the n-Simplex projection</b><br>
+ Giuseppe Amato (Italy), Edgar Chávez (Mexico), Richard Connor (United Kingdom), Fabrizio Falchi, Claudio Gennaro (Italy) and Lucia Vadicamo (Italy).</i>
+  <br><p> </p>
+  <b>Performance Analysis
+  of Graph-based Methods for Exact and Approximate Similarity Search in Metric
+  Spaces</b><br>
+  Larissa Shimomura (Brazil), Marcos Vieira (USA) and Daniel Kaster (Brazil).
+  <br><p> </p>
+  <b>Querying Metric Spaces with Bit Operations</b><br>
+  Richard Connor (United Kingdom) and Alan Dearle (United Kingdom).
+  <br><p> </p>
+  <b>Relative minimum distance between projected bags for improved multiple
+  instance classification</b><br>
+  José Francisco Ruiz-Muñoz (Colombia), César Germán Castellanos-Domínguez (Colombia) and Mauricio Orozco-Alzate (Colombia).</td>
+
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'>15:30-16:00<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td class=xl94>Coffee Break</td>
+  <td class=xl99></td>
+
+ </tr>
+ <tr height=241 style='height:181.0pt'>
+  <td height=241 class=xl94 style='height:181.0pt'>16:00-18:00</td>
+  <td class=xl100><h3>Session 2: Visual Search</h3></td>
+  <td class=xl98 width=589 style='width:442pt'><b>Scalability of the NV-tree: Three Experiments</b><br>
+Laurent Amsaleg (France), Björn Þór Jónsson (Denmark) and Herwig Lejsek (Iceland).
+  <br><p> </p>
+
+<b>Transactional Support for Visual Instance Search</b><br>
+Herwig Lejsek (Iceland), Friðrik Heiðar Ásmundsson (Iceland), Björn Þór Jónsson (Denmark) and Laurent Amsaleg (France).
+  <br><p> </p>
+
+<b>Interactive product search based on global and local visual-semantic features</b><br>
+Tomas Skopal (Czech Republic), Ladislav Peska (Czech Republic) and Tomas Grosup (Czech Republic).
+  <br><p> </p>
+
+<b>What is the Role of Similarity for Known-Item Search at Video Browser Showdown?</b><br>
+Jakub Lokoc (Czech Republic), Werner Bailer (Austria) and Klaus Schöffmann (Austria). 
+</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'>18:00-20:00</td>
+  <td class=xl94>Reception and Poster Session<sup><a href="#poster">1</a></sup></td>
+  <td class=xl99></td>
+
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl96 style='height:15.0pt'></td>
+  <td class=xl94 colspan="2" ></td>
+
+
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl96 style='height:15.0pt'></td>
+  <td class=xl105 width=216 style='width:237pt'><h2 id="day2">October 8th</h2></td>
+  <td class=xl99></td>
+
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl95 width=120 style='height:15.0pt;width:90pt'>08:45-17:00</td>
+  <td class=xl94>Registration</td>
+  <td class=xl99></td>
+
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'>9:30-10:30</td>
+  <td class=xl81 width=316 style='width:237pt'>KeyNote 2: Alistair Moffat
+  (Australia)</td>
+  <td class=xl98 width=589 style='width:442pt'>New Dogs for Old Tricks:
+  Improved Compression for Inverted Indexes</td>
+
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'>10:30-11:00</td>
+  <td class=xl81 width=216 style='width:237pt'>Coffee Break</td>
+  <td class=xl99></td>
+
+ </tr>
+ <tr class=xl65 height=177 style='height:133.0pt'>
+  <td height=177 class=xl94 style='height:133.0pt'>11:00-12:30</td>
+  <td class=xl100><h3>Session 3: Nearest Neighbor Queries</h3></td>
+  <td class=xl98 width=589 style='width:442pt'>
+<b>Metric Indexing Assisted by Short-term Memories</b><br>
+Humberto Luiz Razente (Brazil), Regis Michel Dos Santos Sousa (Brazil) and Maria Camila Nardini Barioni (Brazil).
+  <br><p> </p>
+
+<b>New Permutation Dissimilarity Measures for Proximity Searching</b><br>
+Karina Figueroa (Mexico), Nora Reyes (Argentina) and Rodrigo Paredes (Chile).
+  <br><p> </p>
+
+<b>LID-Fingerprint: A Local Intrinsic Dimensionality-Based Fingerprinting Method</b><br>
+Michael E. Houle (Japan), Vincent Oria (USA), Kurt R. Rohloff (USA) and Arwa Wali (USA).
+  </td>
+
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'>12:30-14:00</td>
+  <td class=xl94>Lunch Break</td>
+  <td class=xl99></td>
+
+ </tr>
+ <tr class=xl65 height=177 style='height:133.0pt'>
+  <td height=177 class=xl94 style='height:133.0pt'>14:00-15:30</td>
+  <td class=xl100><h3>Session 4: Clustering and Outlier Detection</h3></td>
+  <td class=xl98 width=589 style='width:442pt'>
+<b>Applying Compression to Hierarchical Clustering</b><br>
+Gilad Baruch (Israel), Shmuel Tomi Klein (Israel) and Dana Shapira (Israel).
+  <br><p> </p>
+
+<b>D-MASC: A Novel Search Strategy for Detecting Regions of Interest in Linear Parameter Space</b><br>
+Daniyal Kazempour (Germany), Kevin Bein (Germany), Peer Kröger (Germany) and Thomas Seidl (Germany).
+  <br><p> </p>
+
+<b>On the Correlation Between Local Intrinsic Dimensionality and Outlierness</b><br>
+Michael E. Houle (Japan), Erich Schubert (Germany) and Arthur Zimek (Denmark).
+  </td>
+
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'>15:30-16:00<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td class=xl94>Coffee Break</td>
+  <td class=xl99></td>
+
+ </tr>
+ <tr class=xl65 height=241 style='height:181.0pt'>
+  <td height=241 class=xl94 style='height:181.0pt'>16:00-18:00</td>
+  <td class=xl100><h3>Session 5: Graphs and Applications</h3></td>
+  <td class=xl98 width=589 style='width:442pt'>
+<b>Intrinsic Degree: An Estimator of the Local Growth Rate in Graphs</b><br>
+Lorenzo von Ritter (Germany), Michael E. Houle (Japan) and Stephan Guennemann (Germany).
+  <br><p> </p>
+
+<b>Advanced Analytics of Large Connected Data Based on Similarity Modeling</b><br>
+Tomas Skopal (Czech Republic), Ladislav Peska (Czech Republic), Irena Holubova (Czech Republic), Petr Pascenko (Czech Republic) and Jan Hucin (Czech Republic).
+  <br><p> </p>
+
+<b>Towards Similarity Models in Police Photo Lineup Assembling Tasks</b><br>
+Ladislav Peska (Czech Republic) and Hana Trojanová (Czech Republic).
+  <br><p> </p>
+
+<b>Privacy-Preserving String Edit Distance with Moves</b><br>
+Shunta Nakagawa (Japan), Tokio Sakamoto (Japan), Yoshimasa Takabatake (Japan), Tomohiro I (Japan), Kilho Shin (Japan) and Hiroshi Sakamoto (Japan).
+  </td>
+
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'>20:00<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td class=xl94>Conference Dinner<sup><a href="#dinner">2</a></sup></td>
+  <td class=xl99></td>
+
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl96 style='height:15.0pt'></td>
+  <td class=xl105 width=216 style='width:237pt'><h2 id="day3">October 9th</h2></td>
+  <td class=xl99></td>
+
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl95 width=120 style='height:15.0pt;width:90pt'>08:45-11:00</td>
+  <td>Registration</td>
+  <td class=xl99></td>
+
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'>9:00-10:00</td>
+  <td class=xl81 width=216 style='width:237pt'>KeyNote 3: Moshe Y. Vardi (USA)</td>
+  <td class=xl99>Humans, Machines, and Work: The Future is Now</td>
+
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'>10:00-10:10</td>
+  <td class=xl81 width=216 style='width:237pt'>Shared coffee break</td>
+  <td class=xl99></td>
+
+ </tr>
+ <tr class=xl65 height=241 style='height:181.0pt'>
+  <td height=241 class=xl94 style='height:181.0pt'>10:10-11:50<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td class=xl101 width=216 style='width:237pt'><h3>Session 6: Shared Session
+  SISAP+SPIRE</h3></td>
+  <td class=xl98 width=589 style='width:442pt'>
+<b>Time Series Retrieval using DTW-Preserving Shapelets [SISAP]</b><br>
+Ricardo C. Sperandio (France), Simon Malinowski (France), Laurent Amsaleg (France) and Romain Tavenard (France).
+  <br><p> </p>
+
+<b>On the Analysis of Compressed Chemical Fingerprints [SISAP]</b><br>
+Fabio Grandi (Italy)
+  <br><p> </p>
+
+<b>Adaptive Computation of the Discrete Frechet Distance [SPIRE]</b><br>
+Jérémy Barbay (Chile)
+  <br><p> </p>
+ 
+<b>Computing Burrows-Wheeler Similarity Distributions for String Collections [SPIRE]</b><br>
+Felipe A. Louza (Brazil), Guilherme P. Telles (Brazil), Simon Gog (USA) and Liang Zhao (Brazil)
+
+
+  </td>
+
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl94 style='height:15.0pt'>11:50-12:00<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+  <td class=xl81 width=216 style='width:237pt'>Shared coffee break</td>
+  <td class=xl99></td>
+
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl97 style='height:15.0pt'>12:00-13:00</td>
+  <td class=xl81 width=216 style='width:237pt'>SPIRE KeyNote: Nata&#353;a Pr&#382;ulj</td>
+  <td class=xl99></td>
+
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl97 style='height:15.0pt'>13:00-13:10</td>
+  <td class=xl81 width=216 style='width:237pt'>SISAP Closing</td>
+  <td class=xl99></td>
+
+ </tr>
+ <tr class=xl65 height=20 style='height:15.0pt'>
+  <td height=20 class=xl97 style='height:15.0pt'>13:10-17:00</td>
+  <td class=xl81 width=216 style='width:237pt'>Conference Excursion (shared with SPIRE)</td>
+  <td class=xl99></td>
+
+
+ </tr>
+</table>
+<p>
+
+<hr>
+<h2>Dinner information.</h2>
+<h5 id="dinner"><sup>2</sup>
+Address:<br>
+Huaca Pucllana<br>
+Calle General Borgoño 8, <br>
+Miraflores
+
+  <hr>
+<h2>Poster Session</h2>
+<h5 id="poster"><sup>1</sup> We will have a poster session for all papers (full, short and demonstration papers) in SISAP 2018. The poster session will take place at the same location as the reception on October 7th, 2018 (18:00-20:00). This session is expected to be a great opportunity to learn more about each presented paper in an informal setting and hopefully will enable new collaboration ideas.
+<p>
+
+<h5>The posters will be printed by our local organizers in Lima. In order to facilitate this process, please prepare and submit your poster in PDF format to posters.sisap2018@gmail.com. The recommended poster size is A1 (23.4 x 33.1 in). The (hard) submission deadline is September 24th, 2018.
+</h5>
+<p><h5>
+Looking forward to seeing you all in Peru,
+<p></h5>
+ 
+<h5>
+Yasin Silva and Stephane Marchand-Maillet<br>
+Program committee co-chairs</h5>
+
+</h5>
+    </div>
+    <div id="ruler"> </div>
+    <div class="footer">
+   
+    </div>
+  </div>
+</body>
+
+</html>

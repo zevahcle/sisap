@@ -1,0 +1,4 @@
+AuthName "sisapweb"
+AuthType "Digest"
+AuthUserFile "/volume1/web/passwd/normal.pw"
+Require valid-user

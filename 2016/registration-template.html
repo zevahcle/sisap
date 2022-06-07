@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC
+    "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>SISAP 2016 &ndash; International Conference on Similarity Search and Applications</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="page">
+      <div id="header">
+        <img class="spanning" src="images/header-registration-template.jpg" alt="Tokyo">
+        <div id="logo">
+          <img src="images/avatar.png" alt="SISAP 2016">
+          <h1>SISAP 2016<h1>
+          <h2>October 24<span id="hyphen-hack">&ndash;</span>26</h2>
+          <h2>Tokyo, Japan</h2>
+        </div>
+      </div>
+      <div id="menu">
+        <h3>Main</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="call-for-papers.html">Call for papers</a></li>
+          <li><a href="organization.html">Organization</a></li>
+          <li><a href="program-committee.html">Program committee</a></li>
+          <li><a href="keynote-speakers.html">Keynote speakers</a></li>
+          <li><a href="sponsors.html">Sponsors &amp; supporters</a></li>
+          <li><a href="news-and-updates.html">News and updates</a></li>
+        </ul>
+        <h3>Contributions</h3>
+        <ul>
+          <li><a href="submission-guidelines.html">Submission guidelines</a></li>
+          <li><a href="important-dates.html">Important dates</a></li>
+          <li><a href="accepted-papers.html">Accepted papers</a></li>
+          <li><a href="camera-ready-version.html">Camera-ready version</a></li>
+          <li><a href="conference-program.html">Conference program</a></li>
+        </ul>
+        <h3>Attendance</h3>
+        <ul>
+          <li><a href="conference-venue.html">Conference venue</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="accommodation.html">Accommodation</a></li>
+          <li><a href="travel-information.html">Travel information</a></li>
+        </ul>
+        <h3>SISAP</h3>
+        <ul>
+          <li><a href="http://www.sisap.org/2015">SISAP 2015</a></li>
+          <li><a href="http://www.sisap.org/2014">SISAP 2014</a></li>
+          <li><a href="http://www.sisap.org/2013">SISAP 2013</a></li>
+          <li><a href="http://www.sisap.org/2012">SISAP 2012</a></li>
+          <li><a href="http://www.sisap.org/2011">SISAP 2011</a></li>
+          <li><a href="http://www.sisap.org/2010">SISAP 2010</a></li>
+          <li><a href="http://www.sisap.org/2009">SISAP 2009</a></li>
+          <li><a href="http://www.sisap.org/2008">SISAP 2008</a></li>
+          <li><a href="http://www.sisap.org">SISAP home</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <script>
+          /**
+           * Renders the initial registration dialog with default values filled for
+           * the individual form elements.
+           */
+          function renderRegistrationForm(first_name,
+              last_name,
+              email,
+              organization,
+              job_function,
+              reg_type,
+              country,
+              special_requests,
+              additional_banquet_tickets) {
+            var regular_checked = (reg_type == 'regular') ? ' checked' : '';
+            var student_checked = (reg_type == 'student') ? ' checked' : '';
+            document.getElementById("reg_main").innerHTML = '<form id="registration">' +
+                '  <table>' +
+                '    <tbody>' +
+                '      <tr>' +
+                '        <td>First Name*</td>' +
+                '        <td><input type="text" id="r_first_name" value="' + first_name + '"></td>' +
+                '      </tr>' +
+                '      <tr>' +
+                '        <td>Last Name*</td>' +
+                '        <td><input type="text" id="r_last_name" value="' + last_name + '"></td>' +
+                '      </tr>' +
+                '      <tr>' +
+                '        <td>Email Address*</td>' +
+                '        <td><input type="email" id="r_email" value="' + email + '"></td>' +
+                '      </tr>' +
+                '      <tr>' +
+                '        <td>Organization*</td>' +
+                '        <td><input type="text" id="r_organization" value="' + organization + '"></td>' +
+                '      </tr>' +
+                '      <tr>' +
+                '        <td>Title/Job Function</td>' +
+                '        <td><input type="text" id="r_job_function" value="' + job_function + '"></td>' +
+                '      </tr>' +
+                '      <tr>' +
+                '        <td>Country*</td>' +
+                '        <td><input type="text" id="r_country" value="' + country + '"></td>' +
+                '      </tr>' +
+                '      <tr>' +
+                '        <td>Special Request (Dietary restrictions, etc.)</td>' +
+                '        <td><textarea id="r_special_request">' + special_requests + '</textarea></td>' +
+                '      </tr>' +
+                '      <tr>' +
+                '        <td>Registration Type</td>' +
+                '        <td id="reg_type_cell">' +
+                '          <input type="radio" name="r_reg_type" id="r_reg_type_1" value="regular"' + regular_checked + '>Regular' +
+                '          <br>' +
+                '          <input type="radio" name="r_reg_type" id="r_reg_type_2" value="student"' + student_checked + '>Student' +
+                '        </td>' +
+                '      </tr>' +
+                '      <tr>' +
+                '        <td>Additional banquet tickets</td>' +
+                '        <td><input type="number" id="r_banquet" min="0" max="5" value="' + Number(additional_banquet_tickets) + '"></td>' +
+                '      </tr>' +
+                '      <tr>' +
+                '        <td></td>' +
+                '        <td><input type="button" value="Next" onclick="trySubmitForm()"></td>' +
+                '      </tr>' +
+                '    </tbody>' +
+                '  </table>' +
+                '  <span id="r_message" class="error_message"></span>' +
+                '</form>';
+          }
+        
+          /**
+           * Renders a confirmation form restating the previously entered registration
+           * details and providing a breakdown of the registration fees.
+           */
+          function renderConfirmationForm(
+              first_name,
+              last_name,
+              email,
+              organization,
+              job_function,
+              reg_type,
+              country,
+              special_requests,
+              additional_banquet_tickets) {
+            document.getElementById("reg_main").innerHTML = '<form id="registration">' +
+                '  <table>' +
+                '    <tbody>' +
+                '      <tr>' +
+                '        <td>First Name*</td>' +
+                '        <td><b>' + first_name + '</b></td>' +
+                '      </tr>' +
+                '      <tr>' +
+                '        <td>Last Name*</td>' +
+                '        <td><b>' + last_name + '</b></td>' +
+                '      </tr>' +
+                '      <tr>' +
+                '        <td>Email Address*</td>' +
+                '        <td><b>' + email + '</b></td>' +
+                '      </tr>' +
+                '      <tr>' +
+                '        <td>Organization*</td>' +
+                '        <td><b>' + organization + '</b></td>' +
+                '      </tr>' +
+                '      <tr>' +
+                '        <td>Title/Job Function</td>' +
+                '        <td><b>' + job_function + '</b></td>' +
+                '      </tr>' +
+                '      <tr>' +
+                '        <td>Country*</td>' +
+                '        <td><b>' + country + '</b></td>' +
+                '      </tr>' +
+                '      <tr>' +
+                '        <td>Special Request (Dietary restrictions, etc.)</td>' +
+                '        <td><b>' + special_requests + '</b></td>' +
+                '      </tr>' +
+                '      <tr>' +
+                '        <td>Registration Type</td>' +
+                '        <td id="reg_type_cell"><b>' + reg_type + '</b></td>' +
+                '      </tr>' +
+                '      <tr>' +
+                '        <td>Banquet tickets</td>' +
+                '        <td><b>' + (1 + Number(additional_banquet_tickets)) + '</b></td>' +
+                '      </tr>' +
+                '      <tr>' +
+                '        <td colspan="2">' +
+                '          <input id="c_back_button" type="button" value="Back">' +
+                '          <input id="c_confirm_button" type="button" value="Confirm">' +
+                '        </td>' +
+                '      </tr>' +
+                '    </tbody>' +
+                '  </table>' +
+                '</form>';
+            document.getElementById("c_back_button").onclick = function () {
+              renderRegistrationForm(first_name,
+                  last_name,
+                  email,
+                  organization,
+                  job_function,
+                  reg_type,
+                  country,
+                  special_requests,
+                  additional_banquet_tickets);
+            }
+            document.getElementById("c_confirm_button").onclick = function () {
+              submitToGoogleForm(
+                  first_name,
+                  last_name,
+                  email,
+                  organization,
+                  job_function,
+                  country,
+                  special_requests,
+                  reg_type,
+                  additional_banquet_tickets);
+            }
+          }
+        
+          function getValueByIdNonEmpty(id, message) {
+            var element = document.getElementById(id);
+            if (element.value.length < 1) {
+              element.className = "form_invalid_value";
+              return undefined;
+            }
+            element.className = "";
+            return element.value;
+          }
+        
+          function validateEmail(email) {
+            var re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+            return re.test(email);
+          }
+        
+          function trySubmitForm() {
+            // Read mandatory values.
+            var first_name = getValueByIdNonEmpty("r_first_name", "First name must be non-empty.");
+            var last_name = getValueByIdNonEmpty("r_last_name", "Last name must be non-empty.");
+            var organization = getValueByIdNonEmpty("r_organization", "Organization must be non-empty.");
+            var country = getValueByIdNonEmpty("r_country", "Country must be non-empty.");
+            var email = getValueByIdNonEmpty("r_email", "Email must be non-empty.");
+            if (email !== undefined && !validateEmail(email)) {
+              document.getElementById("r_email").className = "form_invalid_value";
+              email = undefined;
+            }
+        
+            // Read registration type.
+            var reg_types = document.getElementsByName("r_reg_type");
+            var reg_type = undefined;
+            for (var i = 0; i < reg_types.length; ++i) {
+              if (reg_types[i].checked) {
+                reg_type = reg_types[i].value;
+              }
+            }
+            if (reg_type == undefined) {
+              document.getElementById("reg_type_cell").className = "form_invalid_value";
+            } else {
+              document.getElementById("reg_type_cell").className = "";
+            }
+        
+            // Read optional values.
+            var job_function = document.getElementById("r_job_function").value;
+            var special_requests = document.getElementById("r_special_request").value;
+            var additional_banquet_tickets = document.getElementById("r_banquet").value;
+        
+            // Check if all mandatory values are properly defined.
+            var shouldSubmit =
+                first_name !== undefined &&
+                last_name !== undefined &&
+                organization !== undefined &&
+                country !== undefined &&
+                email !== undefined &&
+                reg_type !== undefined;
+            if (shouldSubmit) {
+              document.getElementById("r_message").innerHTML = "";
+              renderConfirmationForm(
+                  first_name,
+                  last_name,
+                  email,
+                  organization,
+                  job_function,
+                  reg_type,
+                  country,
+                  special_requests,
+                  additional_banquet_tickets);
+            } else {
+              document.getElementById("r_message").innerHTML =
+                  "We encountered problems processing your request. Please review " +
+                  "your input and resubmit the form.";
+            }
+          }
+        
+          function submitToGoogleForm(
+              first_name,
+              last_name,
+              email,
+              organization,
+              job_function,
+              country,
+              special_request,
+              reg_type,
+              banquet) {
+            var xmlHttpRequest = new XMLHttpRequest();
+            xmlHttpRequest.withCredentials = true;
+            xmlHttpRequest.onreadystatechange = function() {
+                var READYSTATE_COMPLETED = 4;
+                if (this.readyState == READYSTATE_COMPLETED) {
+                  document.getElementById("reg_main").innerHTML =
+                      "<p>Your information has been sent. Please check your email for details on how to pay the registration fee.</p>";
+                }
+            }
+            xmlHttpRequest.open('POST', 'https://script.google.com/macros/s/AKfycbyYdCg6DsYaWI9Tnv5vJiTpU3G-nyIpmjubCyaP9IKtjg2fO30/exec');
+            var form_data = new FormData();
+            form_data.append("p_first_name" , first_name);
+            form_data.append("p_last_name" , last_name);
+            form_data.append("p_email" , email);
+            form_data.append("p_organization" , organization);
+            form_data.append("p_job_function" , job_function);
+            form_data.append("p_country" , country);
+            form_data.append("p_special_request" , special_request);
+            form_data.append("p_reg_type" , reg_type);
+            form_data.append("p_banquet", banquet);
+            form_data.append("p_foo", "Bar");
+            xmlHttpRequest.send(form_data);
+          }
+        
+          window.onload = function() {
+            renderRegistrationForm(
+                'Michael',
+                'Nett',
+                'mnett@google.com',
+                'Google Japan',
+                'SWE',
+                'regular',
+                'Japan',
+                '',
+                0);
+          }
+        </script>
+        
+        <h1>Registration</h1>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula velit non fermentum iaculis. In porttitor leo in est volutpat imperdiet. Nunc nec tortor justo. Suspendisse scelerisque ipsum in justo ultrices, eu scelerisque libero sagittis. Sed tempus massa sit amet tellus suscipit ultricies. Integer sodales enim sed consequat vulputate. Aenean vel imperdiet odio. Donec sed ex in nisl dignissim vulputate. Praesent viverra turpis in arcu bibendum eleifend. Pellentesque vestibulum odio lectus, ut congue velit efficitur id. Aenean iaculis risus sem, a porttitor eros feugiat eu. Aenean vehicula vestibulum varius. Etiam tincidunt mi eu auctor elementum.</p>
+        
+        <div id="reg_main"></div>
+        
+        <p>Nullam tincidunt rutrum lorem, in iaculis lorem laoreet a. Morbi et justo dolor. Mauris massa enim, accumsan ut lacus eu, suscipit ultricies quam. Phasellus tincidunt leo eu sem hendrerit luctus. Vestibulum lobortis rhoncus odio. Nunc sed ante id urna lacinia efficitur in et mi. Aenean eu ligula porttitor risus lacinia volutpat id id quam. Suspendisse at hendrerit velit, ac aliquet magna. Proin vel lobortis ligula. Etiam nec massa scelerisque, finibus nulla vel, viverra justo.</p>
+        
+      </div>
+      <div id="twitter">
+        <a class="twitter-timeline" href="https://twitter.com/SISAP2016" data-widget-id="660736015938686977">Tweet @SISAP2016</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+      <div class="ruler">
+      </div>
+      <div class="footer">
+        <a href="http://www.nii.ac.jp"><img src="images/nii.png" alt="National Institute of Informatics"></a>
+        <a href="http://www.jst.go.jp/kisoken/crest/en/project/1111081/14531617.html"><img src="images/dpdp.png" alt="DPDP"></a>
+        <a href="http://www.google.com"><img src="images/google.png" alt="Google"></a>
+        </div><div class="footer">
+        <a href="http://www.springer.com/computer/lncs"><img src="images/lncs.jpg" alt="Springer Lecture Notes in Computer Science"></a>
+        <a href="http://www.jst.go.jp/erato/kawarabayashi/english/"><img src="images/klgp.png" alt="Kawarabayashi Large Graph Project"></a>
+        <a href="http://www.journals.elsevier.com/information-systems/"><img src="images/is.png" alt="Elsevier Journal on Information Systems"></a>
+        <a href="http://dbsj.org/en/"><img src="images/dbsj.png" alt="Database Society of Japan"></a>
+      </div>
+    </div>
+  </body>
+</html>

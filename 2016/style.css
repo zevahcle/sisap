@@ -1,0 +1,339 @@
+@font-face {
+  font-family: "Cantarell";
+  src: url('Cantarell-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Yanone Kaffeesatz";
+  src: url('YanoneKaffeesatz-Regular.ttf');
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0 0 33px 0;
+  background-color: #edf2f2;
+}
+
+#page {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+#avatar {
+  border: 5px solid red;
+  border-radius: 5px;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  width: 130px;
+  height: 130px;
+}
+
+#header {
+  width: 100%;
+  height: 440px;
+  background-color: #fff;
+  margin-bottom: 14px;
+  border-bottom: 2px solid #e1e8ed;
+}
+
+#logo {
+  padding-top: 4px;
+  padding-left: 4px;
+  width: 335px;
+  height: 104px;
+  border: 5px solid #fff;
+  border-radius: 5px;
+  position: relative;
+  top: -42px;
+  left: 44px;
+  background-color: #e1e8ed;
+}
+
+#logo h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  margin-bottom: 0px;
+}
+
+#logo h2 {
+  font-family: "Robot", sans-serif;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+#hyphen-hack {
+  margin-left: 2px;
+}
+
+#logo img {
+  width: 110px;
+  height: 100px;
+  float: left;
+  margin-right: 15px;
+}
+
+#header > img.offset {
+  width: 110px;
+  height: 110px;
+  border: 5px solid white;
+  border-radius: 5px;
+  position: relative;
+  top: -80px;
+  left: 44px;
+}
+
+#header > img.spanning {
+  width: 100%;
+}
+
+#menu {
+  width: 200px;
+  float: left;
+  padding: 3px 15px 0 15px;
+}
+
+#menu > h3 {
+  width: 100%;
+  background-color: #495448;
+  color: #fff;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.23em;
+  text-align: center;
+  padding-top: 4px;
+  margin-bottom: 4px;
+}
+
+#menu ul {
+  list-style-type: none;
+  padding: 0 0 1px 2px;
+  margin: 0 0 11px 0;
+}
+
+#menu li {
+  color: #000;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1.1em;
+  line-height: 1.2;
+  margin: 2px 0 2px 5px;
+  text-decoration: none;
+}
+
+#menu a {
+  color: #495448;
+  text-decoration: none;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+#content {
+  width: 500px;
+  padding: 0 0 0 0;
+  float: left;
+  margin-bottom: 15px;
+}
+
+#content h1 {
+  color: #000000;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 27px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  margin: 1px 0 22px 0;
+}
+
+#content h2 {
+  color: #000000;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  margin: 1px 0 3px 0;
+}
+
+#content h3 {
+  color: #000000;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  margin: 1px 0 3px 0;
+}
+
+#content p {
+  display: block;
+  color: #444444;
+  font-family: "Cantarell", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: justify;
+}
+
+#content li {
+  color: #444444;
+  font-family: "Cantarell", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+#content ul {
+  margin-top: 0;
+}
+
+span.station-label {
+  font-weight: bold;
+}
+
+span.deadline_upcoming {
+  font-weight: bold;
+}
+
+span.deadline_expired {
+  color: #f00;
+}
+
+#content td {
+  padding-left: 8px;
+  color: #444444;
+  font-family: "Cantarell", sans-serif;
+  font-size: 13px;
+}
+
+#content th {
+  background: #ccc;
+  padding-right: 16px;
+  padding-left: 16px;
+  color: #444;
+  font-family: "Cantarell", sans-serif;
+  font-size: 13px;
+}
+
+#content a {
+  color: #9da87b;
+  text-decoration: underline;
+}
+
+#twitter {
+  width: 200px;
+  float: left;
+  padding: 0 15px 0 15px;
+  margin-bottom: 15px;
+}
+
+div.footer {
+  clear: left;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+div.ruler {
+  padding: 7px 0 4px 0;
+  clear: left;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3px;
+  border-top: 1px solid #e1e8ed;
+}
+
+div.footer img {
+  margin: 0 16px 0 16px;
+}
+
+h1, h2, h3 {
+  margin: 0 0 0 0;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+img.metro-icon {
+  width: 32px;
+  height: 32px;
+}
+
+a img {
+  margin-bottom: -2px;
+}
+
+img.sponsor {
+  margin: 8px 0 18px 0;
+  height: 66px;
+}
+
+img.keynote {
+  float: left;
+  width: 154px;
+  padding-right: 10px;
+  padding-bottom: 6px;
+}
+
+div.clearfloat {
+  clear: both;
+  margin-bottom: 40px;
+}
+
+span.error_message {
+  font-family: "Cantarell", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: red;
+}
+
+#registration input {
+  font-family: "Cantarell", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+#registration input.form_invalid_value {
+  background-color: #fcc;
+}
+
+#registration textarea {
+  margin: 0px;
+  width: 335px;
+  height: 118px;
+}
+
+span.obsolete {
+  text-decoration: line-through;
+}
+
+span.alert {
+  color: red;
+  font-weight: bold;
+}
+
+table.program {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.program, td {
+  min-width: 90px;
+  padding: 8px;
+  vertical-align: top;
+}
+
+table.program, th {
+  height: 40px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+  background-color: #e0e0e0;
+}

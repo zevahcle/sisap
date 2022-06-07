@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC
+    "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>SISAP 2016 &ndash; International Conference on Similarity Search and Applications</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="page">
+      <div id="header">
+        <img class="spanning" src="images/header-awards.jpg" alt="Tokyo">
+        <div id="logo">
+          <img src="images/avatar.png" alt="SISAP 2016">
+          <h1>SISAP 2016<h1>
+          <h2>October 24<span id="hyphen-hack">&ndash;</span>26</h2>
+          <h2>Tokyo, Japan</h2>
+        </div>
+      </div>
+      <div id="menu">
+        <h3>Main</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="call-for-papers.html">Call for papers</a></li>
+          <li><a href="organization.html">Organization</a></li>
+          <li><a href="program-committee.html">Program committee</a></li>
+          <li><a href="keynote-speakers.html">Keynote speakers</a></li>
+          <li><a href="sponsors.html">Sponsors &amp; supporters</a></li>
+          <!-- <li><a href="news-and-updates.html">News and updates</a></li> -->
+        </ul>
+        <h3>Contributions</h3>
+        <ul>
+          <li><a href="submission-guidelines.html">Submission guidelines</a></li>
+          <li><a href="important-dates.html">Important dates</a></li>
+          <li><a href="accepted-papers.html">Accepted papers</a></li>
+          <li><a href="camera-ready-version.html">Camera-ready version</a></li>
+          <li><a href="conference-program.html">Conference program</a></li>
+          <li><a href="awards.html">Awards</a></li>
+        </ul>
+        <h3>Attendance</h3>
+        <ul>
+          <li><a href="conference-venue.html">Conference venue</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="accommodation.html">Accommodation</a></li>
+          <li><a href="travel-information.html">Travel information</a></li>
+          <li><a href="photos.html">Photos</a></li>
+        </ul>
+        <h3>SISAP</h3>
+        <ul>
+          <li><a href="http://www.sisap.org/2015">SISAP 2015</a></li>
+          <li><a href="http://www.sisap.org/2014">SISAP 2014</a></li>
+          <li><a href="http://www.sisap.org/2013">SISAP 2013</a></li>
+          <li><a href="http://www.sisap.org/2012">SISAP 2012</a></li>
+          <li><a href="http://www.sisap.org/2011">SISAP 2011</a></li>
+          <li><a href="http://www.sisap.org/2010">SISAP 2010</a></li>
+          <li><a href="http://www.sisap.org/2009">SISAP 2009</a></li>
+          <li><a href="http://www.sisap.org/2008">SISAP 2008</a></li>
+          <li><a href="http://www.sisap.org">SISAP home</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <h1>Awards</h1>
+        
+        <h2>SISAP 2016 Best Paper Award</h2>
+        
+        <p>
+        <i>Supermetric Search with the Four-Point Property</i><br/>
+        Richard Connor, Franco Alberto Cardillo, Lucia Vadicamo and Fausto Rabitti.
+        </p>
+        
+        <h2>Invited Papers for Information Systems Special Issue</h2>
+        
+        <ul>
+        <li><i>A Free Energy Foundation of Semantic Similarity in Automata and Languages</i><br/>Cewei Cui and Zhe Dang.</li>
+        <li><i>Supermetric Search with the Four-Point Property</i><br/>Richard Connor, Franco Alberto Cardillo, Lucia Vadicamo and Fausto Rabitti.</li>
+        <li><i>Context Semantic Analysis: a Knowledge-Based Technique for Computing Inter-Document Similarity</i><br/>Fabio Benedetti, Sonia Bergamaschi and Domenico Beneventano.</li>
+        <li><i>Fast Approximate Furthest Neighbors with Data-Dependent Hashing</i><br/>Ryan Curtin and Andrew Gardner.</li>
+        <li><i>Similarity Searching in Long Sequences of Motion Capture Data</i><br/>Jan Sedmidubsky, Petr Elias and Pavel Zezula.</li>
+        </ul>
+      </div>
+      <div id="twitter">
+        <a class="twitter-timeline" href="https://twitter.com/SISAP2016" data-widget-id="660736015938686977">Tweet @SISAP2016</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+      <div class="ruler">
+      </div>
+      <div class="footer">
+        <a href="http://www.nii.ac.jp"><img src="images/nii.png" alt="National Institute of Informatics"></a>
+        <a href="http://www.jst.go.jp/kisoken/crest/en/project/1111081/14531617.html"><img src="images/dpdp.png" alt="DPDP"></a>
+        <a href="http://www.google.com"><img src="images/google.png" alt="Google"></a>
+        </div><div class="footer">
+        <a href="http://www.springer.com/computer/lncs"><img src="images/lncs.jpg" alt="Springer Lecture Notes in Computer Science"></a>
+        <a href="http://www.jst.go.jp/erato/kawarabayashi/english/"><img src="images/klgp.png" alt="Kawarabayashi Large Graph Project"></a>
+        <a href="http://www.journals.elsevier.com/information-systems/"><img src="images/is.png" alt="Elsevier Journal on Information Systems"></a>
+        <a href="http://dbsj.org/en/"><img src="images/dbsj.png" alt="Database Society of Japan"></a>
+      </div>
+    </div>
+  </body>
+</html>

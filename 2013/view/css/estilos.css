@@ -1,0 +1,24 @@
+@import url("reset.css");
+@import url("plantilla.css");
+@import url("mensaxesPendentes.css");
+@import url("formularios.css");
+@import url("infoBundle.css");
+@import url("taboas.css");
+@import url("elementos.css");
+@import url("menu.css");
+@import url("i18n.css");
+@import url("usuario.css");
+@import url("thickbox.css");
+@import url("js/select-free.css");
+@import url("jquery.lightbox-0.5.css");
+@import url("paxinacion.css");
+@import url("portada.css");
+@import url("js/jquery-ui.css");
+
+/* Css para modificación por parte das implementacións particulares */
+@import url("overrides.css");
+
+
+
+
+

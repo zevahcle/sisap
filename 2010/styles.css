@@ -1,0 +1,291 @@
+/*
+Design by Metamorphosis Design
+http://www.metamorphozis.com
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+*
+{
+margin: 0px;
+padding: 0px;
+}
+
+a:link {
+    color: #D72020;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FF0000;
+}
+
+a:visited {
+    color: #D72020;
+}
+
+body {
+/*    background: #FFD723 url(images/back_all.jpg) repeat-x;*/
+    background: #ffffff;
+    font: 13px Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+
+#content
+{
+    margin: 0 auto;
+/*    background: #ffffff;*/
+    background: #FFD723 url(images/back_all.jpg) repeat-x;
+/*    width: 786px;*/
+    width: 778px;
+    text-align: left;
+    
+}
+
+
+#header {
+    background: #ffffff;
+    height: 294px;
+    text-align: left;       
+}
+
+#menu {
+border-left: 4px solid #FFFFFF;
+width: 778px;
+height: 80px;
+background: url(images/header_top.gif) repeat-x;
+}
+
+#menu ul {
+    list-style: none;   
+}
+
+#menu li {
+    display: inline; 
+}
+
+#menu a {
+    float: left;
+    width: 79px;
+    height: 46px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 35px;
+}
+
+#menu a:hover {
+    width: 79px;
+    height: 46px;
+    color: #D72020;
+    text-decoration: underline;
+    background: #FFFFFF url(images/header_top_over.gif) repeat-x;
+}
+
+
+#image {
+    text-align: right;
+    margin-top: 20px;
+}
+
+#logo {
+    background: #ffffff url(images/top.jpg) no-repeat;
+    width: 705px;
+    height: 256px;
+    text-align: left;
+    padding-top: 28px;
+    padding-left: 40px;
+    padding-right: 33px;
+    border-left: 0px solid #ffffff;
+    border-top: 10px solid #ffffff;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 15px;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    color: #FF8800;
+}
+
+
+#logo a {
+    text-decoration: none;
+    text-transform: lowercase;
+    font-style: italic;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+#logo h1 {
+    font-size: 24px;
+}
+
+#left {
+    padding: 10px;
+    width: 167px;
+    padding-right: 1em;
+}
+
+#left H3 {
+    width: 152px;
+    height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-top: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: url(images/title.gif) no-repeat
+}
+
+#left ul {
+    list-style: none;
+    border-bottom: 1px solid #D72020;
+    border-left: 1px solid #D72020;
+    border-right: 1px solid #D72020;
+    padding-left: 10px;
+    padding-bottom: 3px;
+}
+
+#left li ul {
+    border: 0px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#left li li {
+    padding: 4px 20px;
+    background: url(images/small.gif) no-repeat left;
+}
+
+#left a {
+    color: #D72020;
+}
+
+#left a:visited {
+    color: #D72020;
+}
+
+#left p {
+    padding: 10px;
+    border-bottom: 1px solid #D72020;
+    border-left: 1px solid #D72020;
+    border-right: 1px solid #D72020;
+}
+
+/*
+#calendar1 {
+    padding: 0 10px 20px 10px;
+}
+
+#calendar table {
+    width: 100%;
+    text-align: center;
+}
+
+#calendar thead {
+    background: #F1F1F1;
+}
+
+#calendar tbody td {
+    border: 1px solid #F1F1F1;
+}
+
+#calendar #prev {
+    text-align: left;
+}
+
+#calendar #next {
+    text-align: right;
+}
+
+#calendar tfoot a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#calendar #now {
+    background: #499FFF;
+    border: 1px solid #ff0000;
+    font-weight: bold;
+    color: #ffffff
+}
+*/
+#right {
+    float: right;
+    width: 570px;
+    padding-right: 10px;
+}
+
+#right H4 {
+    margin: 0;
+    padding: 0px;
+    font-size: 12px;
+    color: #D72020;
+}
+
+#right a {
+    color: #D72020;
+    text-decoration: none;
+}
+
+#right p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+#right h2 {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    color: #D72020;
+}
+
+#right dt {
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#right dd {
+    padding-left: 20px;
+    padding-bottom: 3px;
+}
+
+#right ul {
+    padding-left: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.date {
+    text-align: right;
+    color: #808080;
+    font-size: 11px;
+}
+
+.date a {
+    color: #D72020;
+}
+
+#footer {
+    height: 44px;
+    clear: both;
+    padding-top: 20px;
+    background: url(images/footer.gif) repeat-x;
+    border-top: 5px solid #A6640E;
+    border-top: 5px solid #D72020;
+}
+
+#footer p {
+    margin: 0;
+    font-size: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#footer a {
+    color: #ffffff;
+}

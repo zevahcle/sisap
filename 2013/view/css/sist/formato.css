@@ -1,0 +1,44 @@
+table#organizacion {
+	width: 100%;
+	margin-top: 10px;
+	margin: 0 auto;
+	border-collapse: collapse;
+	border: none;
+}
+
+p.coordinadora {
+	margin-top: 10px;
+	font-size: 1.2em;
+}
+
+
+table#organizacion td {
+	border: 2px solid white;
+	background-color: white;
+}
+
+
+th.jisbd {
+	background-color:  #dff1e7;
+	color: #007333;
+	font-size: 1.2em;
+	border: 2px solid white;
+	padding: 3px;
+}
+
+th.prole {
+	background-color:  #eee6f5;
+	color: #3e0073;
+	font-size: 1.2em;
+	border: 2px solid white;
+	padding: 3px;
+}
+
+th.jcis {
+	background-color:  #fbfbc6;
+	color: #b3b500;
+	font-size: 1.2em;
+	border: 2px solid white;
+	padding: 3px;
+}
+

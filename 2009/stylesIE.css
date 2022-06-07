@@ -1,0 +1,25 @@
+body {font-family: Arial, Verdana, Helvetica, sans-serif}
+h1 {font-size:22px;}
+
+.cfp a {font-family: Verdana, Arial, Helvetica, sans-serif; font-size:14px; color : #000000; text-decoration : none;}
+.cfp a:hover {color : #bb0000; font-weight: bold; text-decoration : underline;}
+.cfp {background-color : #e9e9f9; margin-top : 0px; padding: 3px}
+
+.prg a {font-family: Verdana, Arial, Helvetica, sans-serif; font-size:14px; color : #000000; text-decoration : none;}
+.prg a:hover {color : #bb0000; font-weight: bold; text-decoration : underline;}
+.prg {background-color : #e9e9f9; margin-top : 0px; padding: 3px}
+
+.reg a {font-family: Verdana, Arial, Helvetica, sans-serif; font-size:14px; color : #000000; text-decoration : none;}
+.reg a:hover {color : #bb0000; font-weight: bold; text-decoration : underline;}
+.reg {background-color : #e9e9f9; margin-top : 0px; padding: 3px}
+
+.lib a {font-family: Verdana, Arial, Helvetica, sans-serif; font-size:14px; color : #000010; text-decoration : none;}
+.lib a:hover {color : #bb0000; font-weight: bold; text-decoration : underline;}
+.lib {background-color :#e9e9f9; margin-top : 0px; padding: 3px}
+
+.lnk a {font-family: Verdana, Arial, Helvetica, sans-serif; font-size:14px; color : #030a3f; text-decoration : none;}
+.lnk a:hover {color : #bb0000; font-weight: bold; text-decoration : underline;}
+.lnk {background-color :#e0e0f0 ; margin-top : 0px; padding: 3px}
+
+.inactive {font-family: Verdana, Arial, Helvetica, sans-serif; font-size:14px; color : #b1b1c1; text-decoration : none; font-style: italic}
+.inactive {background-color : #e9e9f9; margin-top : 0px; padding: 3px}

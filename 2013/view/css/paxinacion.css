@@ -1,0 +1,15 @@
+.numeroResultados{
+	text-align:right;
+	padding:2px 0;
+	clear:both;
+}
+
+.numerosPaxina{
+	text-align:right;
+	padding:2px 0;
+	clear:both;
+}
+
+.numerosPaxina .paxinaActual{
+    font-weight:bold;
+}
