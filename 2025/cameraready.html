@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <title>SISAP 2025</title>
+    <link rel="stylesheet" href="/2025/css/main.css">
+    <link rel="canonical" href="https://www.sisap.org/2025/"> 
+</head>
+
+
+<body> 
+    <div id="page">
+        <header>
+            <img style="width:100%" src="/2025/images/Reykjavik_red.jpg" alt="Reykjavik" id="topbg" />
+            <a href="/" id="headerlogo">
+                <img src="/2025/images/sisap.png" alt="SISAP" /><br>
+                <big>SISAP 2025</big><br> October 1st-3rd <br>Reykjavik, Iceland
+            </a>
+        </header> 
+
+    <main id="main">
+            <h1>Instructions for the Camera-Ready Version</h1>
+            <p>Please take the comments made by the reviewers carefully into account when preparing your camera-ready
+                paper for the proceedings.
+                The final paper and the signed copyright form are due on <b>July 31st, 2025</b>. This is a firm
+                deadline for the production of the proceedings.</p>
+
+                <b>Detailed instruction will be published shortly in this page.
+
+            <!-- <h2>Final paper</h2>
+            <p>Please submit the files belonging to your camera-ready paper through EasyChair.</p>
+            <p>Please upload the following:</p>
+            <ul>
+                <li>either a zipped file containing all your LaTeX sources (including style files, bib files and
+                    images), or a Word file in the RTF format, and</li>
+                <li>a PDF version of your camera-ready paper for reference,</li>
+                <li>the signed copyright form.</li>
+            </ul>
+            <p>The maximum page limit is 14 pages for long papers and 8 pages for short/demo papers.</p>
+            <p>Before submitting the camera-ready version, please:</p>
+            <ul>
+                <li>capitalize paper headings (e.g., "Similarity Searching Without Troubles" instead of "Similarity
+                    searching without troubles")</li>
+                <li>mark the corresponding author</li>
+                <li>check that your PDF file only contains allowed fonts</li>
+                <li>for LaTeX authors, make sure that your project can be compiled</li>
+            </ul>
+            <p> Authors may choose to add an Acknowledgments section if they wish. This should always be a run-in 
+                heading and not a section or sub-section heading. It should not be assigned a number. The acknowledgments 
+                may include references to grants or support received in relation to the work presented in the paper. 
+                Authors should make sure that they have included all necessary acknowledgments before sending the files. 
+                Updates at a later stage are not possible.</p>
+
+            <p>Appendices will be left out of the proceedings, so please remove any appendix from your final paper but
+                make sure that it will be available online (Arxiv, personal webpage, etc.).</p>
+
+            <p>Please, follow strictly the <a
+                    href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">author
+                    instructions of Springer</a>
+                and use their proceedings templates, either for LaTeX or for Word, when preparing the final version.
+                Springer’s proceedings LaTeX templates are available in <a
+                    href="https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj#.WsdHOy5uZpg">Overleaf</a>.
+                Springer encourages authors to include their <a
+                    href="https://www.springer.com/gp/authors-editors/orcid">ORCIDs</a> in their papers.</p>
+            <p>Our publisher has recently introduced an extra control loop: once data processing is finished,
+                they will contact all corresponding authors and ask them to check their papers. We expect this to
+                happen shortly before the printing of the proceedings. At that time your quick interaction with
+                Springer-Verlag will be greatly appreciated.</p>
+
+            <p>Authors should read Springer's <a href="https://www.springernature.com/gp/authors/book-authors-code-of-conduct">Code of Conduct</a> information.</p>                
+
+            <h2>Mandatory Registration</h2>
+            <p>Please note that at least one (unique) <a href="registration.html">registration</a> is required for each
+                accepted paper to be included in the final proceedings.
+                When registering, don't forget to indicate the paper ID.
+        
+            </p>
+            <h2>Copyright</h2>
+            <p>The corresponding author of each paper, acting on behalf of all of the authors of that paper, must
+                complete and sign a Consent-to-Publish form.
+                A pre-filled Springer copyright form can be <a
+                    href="licence-to-publish.docx">found here</a>.
+                The corresponding author signing the copyright form should match the corresponding author marked on the
+                paper.
+                Once the files have been sent to Springer, changes relating to the authorship of the papers cannot be
+                made.</p>
+            <p>Please upload a signed and completed copyright form using the link you received by mail.
+                You can scan the form into PDF or any other standard image format.
+                Springer does not accept digital signatures on the copyright right forms at present.</p>
+            <p>Authors employed by US Government contractors or US Government departments may have to sign an
+                alternative form.
+                It is imperative that such authors contact their legal departments and also get in touch with us as soon
+                as their paper has been accepted.</p>
+            <p>It is essential that the copyright form is correct, so please check before sending the file.
+                The corresponding author must sign the form on behalf of all of the authors of a particular paper,
+                having gained their permission to do so.
+                S/He signs for and accepts responsibility for releasing the material on behalf of any and all
+                co-authors.</p> -->
+       </main>
+   <nav id="sidebar"></nav> <!-- Placeholder for sidebar -->
+    <aside id="aside-container"></aside> <!-- Placeholder for aside (news) -->
+    <footer id="footer-container"></footer> <!-- Placeholder for footer -->
+</div>
+<script>
+    // Load the  from the common html files
+    function loadHTML(id, url) {
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(id).innerHTML = data;
+            })
+            .catch(error => console.error('Error loading the HTML file: ', error));
+    }
+
+    // Load HTML files
+    window.onload = function() {
+        // loadHTML("header-container", "/2025/includes/header.html");
+        loadHTML("footer-container", "/2025/includes/footer.html");
+        loadHTML("aside-container", "/2025/includes/aside.html");
+        loadHTML("sidebar", "/2025/includes/nav.html");
+    }
+</script>
+</body>
+
+</html>
