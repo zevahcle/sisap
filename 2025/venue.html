@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+  <title>SISAP 2025</title>
+  <link rel="stylesheet" href="/2025/css/main.css">
+  <link rel="canonical" href="https://www.sisap.org/2025/"> 
+
+</head>
+
+<body>
+  <div id="page">
+    <header>
+      <img style="width:100%" src="/2025/images/Reykjavik_red.jpg" alt="Reykjavik" id="topbg" />
+      <a href="/" id="headerlogo">
+          <img src="/2025/images/sisap.png" alt="SISAP" /><br>
+          <big>SISAP 2025</big><br> October 1st-3rd <br>Reykjavik, Iceland
+      </a>
+  </header> 
+<main id="main">
+
+    <h1>Conference Venue</h1>
+
+  <p>
+SISAP 2025 will be hosted by <strong>Reykjavík University</strong>. 
+The main conference sessions will take place at <strong><a href="https://nautholl.is/radstefnur-og-fundir/" target="_blank" rel="noopener noreferrer">Nauthóll</a></strong>, a restaurant and conference venue located directly behind the University building. For detailed directions, see the location on <a href="https://maps.app.goo.gl/ANjzfuKew4FReUCF6" target="_blank" rel="noopener noreferrer">Google Map</a>.
+
+</p>
+    
+<p>
+The registration desk and most conference sessions will be held at Nauthóll. 
+The <i>Poster & Demonstration session</i>  will take place in the foyer of the university building (known as <em>the Sun</em>).
+</p>
+
+
+
+<h3>Arriving by Foot or Bus</h3>
+<p>
+If you arrive by foot or by bus, you will likely enter from the front of the University building. 
+The fastest route to Nauthóll is to walk through the university foyer and follow the short path toward the beach. 
+Nauthóll will be on your left, and signage will be provided to help you locate the SISAP entrance.
+</p>
+
+<a href="/2025/images/nautholl_map.jpg" target="_blank">
+  <img src="/2025/images/nautholl_map-170x300.jpg" alt="Map to Nauthóll" width="170" height="300" style="cursor: zoom-in;">
+</a>
+<p style="font-style: italic; font-size: 0.9em; margin-bottom: 0.3em;">Click on the image to view full size</p>
+
+<h3>Arriving by Car or Taxi</h3>
+<p>
+If you are arriving by car or taxi, please note the address:
+</p>
+
+<p>
+<i>Nauthóll<br>
+Nauthólsvegur 106<br>
+102 Reykjavík<br>
+</i>
+</p>
+
+There is plenty of parking outside as there are not only the restaurant’s own parking spaces but also the parking space for 
+<a href="https://en.wikipedia.org/wiki/Nauth%C3%B3lsv%C3%ADk" target="_blank" rel="noopener noreferrer">Nauthólsvík, the geothermal beach</a>.
+
+
+
+  <h2>Reykjavik University</h2>
+<figure>
+        <img src="/2025/images/ru_sun.jpeg" alt="The Sun, Reykjavik University foyer" width="300" />
+        <figcaption>The Sun, Reykjavik University foyer</figcaption>
+      </figure>
+
+      <figure>
+        <img src="/2025/images/ru_earth.jpg" alt="View of Reykjavik University from above" width="300" />
+        <figcaption>View of Reykjavik University from above</figcaption>
+      </figure>
+
+
+  <p>
+    SISAP 2025 will be hosted by Reykjavik University (RU). RU has seven departments, organised under the <i>School of Technology</i> and the <i>School of Social Sciences</i>. About 3500 students attend the various departments and RU has over 500 staff.
+  </p>
+
+ <p>
+    The university moved into a new building in 2010 after years of operating in multiple buildings. 
+    The new building is at Menntavegur 1 (translates to Education-road 1). 
+    The main building is near the city centre and sits next to the domestic airport, just below one of Reykjavik’s landmarks, 
+    <a href="https://en.wikipedia.org/wiki/Perlan" target="_blank" rel="noopener noreferrer">Perlan</a>, and just next to 
+    <a href="https://en.wikipedia.org/wiki/Nauth%C3%B3lsv%C3%ADk" target="_blank" rel="noopener noreferrer">Nauthólsvík </a>, Iceland’s only heated beach -— yes, you read that correctly! To escape the cold weather, locals have created a cozy artificial lagoon heated to 38.5°C, complete with regularly refreshed white sand for that perfect warm beach vibe!
+  </p>
+
+  Information on how to navigate to Reykjavik University can be found <a href="https://en.ru.is/campus/location/" target="_blank" rel="noopener noreferrer">here</a>, and a detailed map of the building is available <a href="http://en.ru.is/media/almennt/Kort-Map-2021.pdf" target="_blank" rel="noopener noreferrer">here</a>.
+  
+
+  </figure>
+</main>
+<nav id="sidebar"></nav>
+<aside id="aside-container"></aside>
+<footer id="footer-container"></footer>
+</div>
+<script>
+// Load the  from the common html files
+function loadHTML(id, url) {
+    fetch(url)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(id).innerHTML = data; 
+        })
+        .catch(error => console.error('Error loading the HTML file: ', error));
+}
+
+// Load HTML files
+window.onload = function() {
+    // loadHTML("header-container", "/2025/includes/header.html");
+    loadHTML("footer-container", "/2025/includes/footer.html");
+    loadHTML("aside-container", "/2025/includes/aside.html");
+    loadHTML("sidebar", "/2025/includes/nav.html");
+}
+</script>
+</body>
+</html>

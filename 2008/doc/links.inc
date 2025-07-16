@@ -1,0 +1,10 @@
+<p class="tituloPrincipal">Other links of interest
+    <br />
+        </span></p>
+    <p class="principal">
+
+<ul>
+<li><a href="http://logic.pdmi.ras.ru/~yura/nearest-neighbors.html">Nearest Neighbors and Similarity Search</a>, an amazingly complete page dedicated to software, literature, researchers, and events related to NN searching.
+<p>
+<p>
+</p>

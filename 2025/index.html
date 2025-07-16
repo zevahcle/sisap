@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <title>SISAP 2025</title>
+    <link rel="stylesheet" href="/2025/css/main.css">
+    <link rel="canonical" href="https://www.sisap.org/2025/"> 
+</head>
+ 
+ 
+<body> 
+    <div id="page">
+        <header>
+            <img style="width:100%" src="/2025/images/Reykjavik_red.jpg" alt="Reykjavik" id="topbg" />
+            <a href="/" id="headerlogo">
+                <img src="/2025/images/sisap.png" alt="SISAP" /><br>
+                <big>SISAP 2025</big><br> October 1st-3rd <br>Reykjavik, Iceland
+            </a>
+        </header> 
+
+        <main id="main">
+            <h1>18th International Conference on<br /> Similarity Search and Applications, SISAP 2025</h1>
+
+            <p>The International Conference on Similarity Search and Applications (SISAP) is an annual forum for
+                researchers and application developers in the area of similarity data management. It aims at the
+                technological problems shared by numerous application domains, such as data mining, information
+                retrieval, multimedia retrieval, computer vision, pattern recognition, computational biology, geography,
+                biometrics, machine learning, and many others that need similarity searching as a necessary supporting
+                service.
+                Please see the <a href="./callforpapers.html">call for papers</a>  for more details.</p>
+
+            <p>SISAP 2025 also features a  <a href="./doctoralsymposium.html"><strong>doctoral symposium</strong></a>. If you are a PhD student, please consider
+                submitting a paper about your project.</p> 
+
+            <p>The SISAP initiative (<a href="https://www.sisap.org/">www.sisap.org</a>) is a forum to exchange
+                real-world, challenging and innovative examples of applications, new indexing techniques, common
+                test-beds and benchmarks, source code and up-to-date literature through its web page, serving the
+                similarity search community. Traditionally, SISAP puts emphasis on the distance-based searching, but in
+                general the conference concerns both the effectiveness and efficiency aspects of any similarity search
+                problem.</p>
+            <p>SISAP is recognized as a <strong>CORE B</strong> conference. The series started in 2008 as a workshop and has developed over the years into an international
+                conference with <a href="http://www.springer.com/gp/computer-science/lncs">Springer Lecture Notes in
+                    Computer Science (LNCS)</a> proceedings. You can find links to past SISAP proceedings on 
+                    <a href="https://link.springer.com/conference/sisap"><strong>SpringerLink</strong></a>. 
+                    
+
+              <p>A small selection of the best papers presented at the conference will be recommended for inclusion in a
+                special issue of <strong>Elsevier <a href="http://www.journals.elsevier.com/information-systems/"> Information
+                    Systems</a></strong>. These extended versions will be subject to a second round of peer review at the
+                journal.</p>  
+                <p>
+                    There will be a <strong>Best Paper Award</strong>. The best papers will be recognized with a certificate and a monetary prize, thanks to 
+                    <strong>Springer</strong>'s sponsorship.
+                </p>
+            <p>SISAP 2025 will take place at <strong>Reykjavik University (RU) Reykjavik, Iceland</strong>.
+
+           <!--    <p>SISAP 2025 will follow a double-blind review process, meaning reviewers 
+                will not know the names of the authors and the authors will not know the names of their reviewers. Author 
+                submission guidelines will be released soon.</p> -->
+           <p><strong>More details will be published soon on this webpage.</strong></p> 
+            <hr />
+
+            <!-- <p><em>Did you know:</em> Bologna is the seventh most populous city in Italy with about 400,000 inhabitants.
+It is known as the Fat, Red, and the Learn'd City due to its rich cuisine, red Spanish tiled rooftops, and being home to the oldest university in the western world (established in AD 1088).
+In 2000 it was declared European capital of culture and in 2006, a UNESCO "City of Music" and became part of the Creative Cities Network.
+In 2021 UNESCO recognized the lengthy porticoes of the city as a World Heritage Site.</p> -->
+        </main>
+        <nav id="sidebar"></nav> <!-- Placeholder for sidebar -->
+        <aside id="aside-container"></aside> <!-- Placeholder for aside (news) -->
+        <footer id="footer-container"></footer> <!-- Placeholder for footer -->
+    </div>
+    <script>
+        // Load the  from the common html files
+        function loadHTML(id, url) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                })
+                .catch(error => console.error('Error loading the HTML file: ', error));
+        }
+    
+        // Load HTML files
+        window.onload = function() {
+            // loadHTML("header-container", "2025/includes/header.html");
+            loadHTML("footer-container", "/2025/includes/footer.html");
+            loadHTML("aside-container", "/2025/includes/aside.html");
+            loadHTML("sidebar", "/2025/includes/nav.html");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>PDF viewer</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<style>
+html, body { margin: 0; padding: 0; background-color: #fff; }
+#container { overflow: auto; position: absolute; width: 100%; height: 100%; }
+</style>
+<link rel="stylesheet" href="https://unpkg.com/pdfjs-dist@2.9.359/web/pdf_viewer.css">
+<script src="https://unpkg.com/pdfjs-dist@2.9.359/build/pdf.js"></script>
+<script src="https://unpkg.com/pdfjs-dist@2.9.359/web/pdf_viewer.js"></script>
+</head>
+<body><div id="container"><div id="inner"></div></div></body>
+<script>
+if (document.referrer && !document.referrer.match(new RegExp("^https://((www.)?sisap.org/2021|world.oh14.de|play.workadventu.re)/"))) { window.alert("This viewer may only be used from SISAP, Referrer: "+document.referrer); } else {
+const cdn = 'https://unpkg.com/pdfjs-dist@2.9.359/';
+const url = window.location.hash.substring(1);
+console.log(url);
+pdfjsLib.GlobalWorkerOptions.workerSrc = cdn + '/build/pdf.worker.js';
+const container = document.getElementById("container");
+const eventBus = new pdfjsViewer.EventBus();
+var pdfLinkService = new pdfjsViewer.PDFLinkService({
+  eventBus: eventBus,
+});
+var pdfFindController = new pdfjsViewer.PDFFindController({
+  eventBus: eventBus,
+  linkService: pdfLinkService,
+});
+const pdfViewer = new pdfjsViewer.PDFViewer({
+  container: container,
+  eventBus: eventBus,
+  linkService: pdfLinkService,
+  findController: pdfFindController,
+  enhanceTextSelection: true,
+  removePageBorders: true,
+});
+pdfLinkService.setViewer(pdfViewer);
+
+eventBus.on("pagesinit", function () {
+  pdfViewer.currentScaleValue = "page-width";
+});
+
+const loadingTask = pdfjsLib.getDocument({ url: url, cMapUrl: cdn + 'cmaps/', cMapPacked: true });
+loadingTask.promise.then(function (pdfDocument) {
+  pdfViewer.setDocument(pdfDocument);
+  pdfLinkService.setDocument(pdfDocument, null);
+});
+}
+</script>
+</html>

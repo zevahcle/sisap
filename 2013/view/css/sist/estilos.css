@@ -1,0 +1,58 @@
+@import url("menus.css");
+@import url("estrutura.css");
+@import url("formato.css");
+@import url("inscripcion.css");
+
+/* Quitar logos e menú en impresión ========================================= */
+@media print {
+	
+	body {
+		background-color: white;
+	}
+	
+	#wrapperContedor {
+		background-image: none;
+		width: 100%;
+	}
+	
+	#publica  #wrapperContedor2 {
+		background-image: none;
+	}
+	
+	#contedor .menu {
+		display: none;
+	}
+	
+	#selectorCongreso {
+		display: none;
+	}
+	
+	#publica #cabeceira {
+		height: 100px;
+	}
+	
+	#wrapperContido {
+		margin-top: 0px;
+	}
+	
+	#footer {
+		display: none;
+	}
+	
+	#botonImprimir {
+		display: none;
+	}
+	botonImprimir
+}
+
+/* Destacar a opción de "Información de interés ============================= */
+
+#publica .menu ul #entradaMenu56 a,
+#publica .menu ul #entradaMenu56 a:active,
+#publica .menu ul #entradaMenu56 a:visited {
+    background-color: #BB0404;
+}
+
+#publica .menu li#entradaMenu56.activa a {
+    background-color: red;
+}

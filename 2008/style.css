@@ -1,0 +1,86 @@
+.barraLateral {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #444444;
+	border: thin solid;
+	background-color: #AAAAAA;
+}
+.barraLateral:hover {background-color:white; color:#000000;}
+.barraLateral a:link {color: #000000; text-decoration: underline; font-weight: bold;}
+.barraLateral a:active {color: #FFFFFF; text-decoration: none;  font-weight: bold;}
+.barraLateral a:visited {color: #000000; text-decoration: underline;  font-weight: bold;}
+.barraLateral a:hover {color: #DD0000; text-decoration: none;  font-weight: bold;}
+
+.principal {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+}
+
+.p1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+}
+
+.p2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+
+.p3 {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+#a:link {color: #000000; text-decoration: underline; font-weight: bold;}
+#a:active {color: #FFFFFF; text-decoration: none;  font-weight: bold;}
+#a:visited {color: #000000; text-decoration: underline;  font-weight: bold;}
+#a:hover {color: #DD0000; text-decoration: none;  font-weight: bold;}
+
+.name {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+.tiny {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+}
+
+.barraCreditos {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+	border-top-width: thin;
+	border-top-style: dotted;
+	border-top-color: #333333;
+}
+.bordePrincipal {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border: thin solid #000000;
+}
+.tituloPrincipal {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.tituloSecundario {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: italic;
+}
+body {
+	background-color: #FFFFDD;
+	background-color: #FFFFCC;
+}
+
+.principal a:link {color: #000000; text-decoration: underline; font-weight: bold; color: #202020; }
+.principal a:active {color: #FFFFFF; text-decoration: none;  font-weight: bold; color: #202020; }
+.principal a:visited {color: #000000; text-decoration: underline;  font-weight: bold; color: #202020; }
+.principal a:hover {color: #DD0000; text-decoration: none;  font-weight: bold; color: red;}
+

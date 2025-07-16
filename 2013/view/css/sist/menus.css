@@ -1,0 +1,157 @@
+/* =================== Estilos do menú de primeiro nivel ==================== */
+#publica .menu, #login .menu{
+	background-color:transparent;
+	padding-top:65px;
+	width: 181px;
+	margin-left: 10px;
+	}
+
+#publica .menu ul, #login .menu ul{
+	list-style: none;
+	padding: 0px;
+	}
+	
+#publica .menu li ul, #login .menu li ul{
+	list-style: none;
+	padding: 0px 0px 0px 6px;
+	}	
+
+#publica .menu li, #login .menu li{
+	font-size:14px;
+	}
+	
+#publica .menu li ul li, #login .menu li ul li{
+	background-color:transparent;
+	}	
+				
+#publica .menu li ul, #login .menu li ul{
+	padding:0px 0px 0px 8px;
+	}
+
+		
+#publica .menu li ul li.activa a , #login .menu li ul li.activa a{
+	color:#0c2d72;
+	background-color:transparent;
+	font-weight:bold;
+	}
+	
+#publica .menu ul a, #publica  .menu ul a:active, #publica .menu ul a:visited, 
+#login .menu ul a, #login  .menu ul a:active, #login .menu ul a:visited{
+	text-decoration:none;
+	color:#FFF;
+	font-size:14px;
+	margin:4px;
+	background-color:#1759b0;
+	display:block;
+	padding: 3px 3px 3px 10px;
+	}	
+
+#publica .menu li.activa a , #login .menu li.activa a{
+	background-color:#0c2d72;
+	font-weight:normal;
+	display:block;
+	}
+	
+#publica .menu li ul li a, #publica  .menu li ul li a:active, #publica .menu li ul li a:visited, 
+#login .menu li ul li a, #login  .menu li ul li a:active, #login .menu li ul li a:visited{
+	font-size:14px;
+	background-color:transparent;
+	color:#1759b0;
+	margin: 0;
+	}	
+	
+#publica .menu li ul li.activa a, #publica  .menu li ul li.activa a:active, #publica .menu li ul li.activa a:visited, 
+#login .menu li ul li.activa a, #login  .menu li ul li.activa a:active, #login .menu li ul li.activa a:visited{
+	color:#0c2d72;
+	}	
+	
+#publica .menu li.activa ul li a , #login li.activa ul li a{
+	background-color:transparent;
+	}	
+/* ==================== Estilos do menú de segundo nivel ==================== */
+
+.submenuCongreso{
+	height: 30px;
+	padding-left: 5px;
+	}
+	
+	
+.submenuCongreso ul{
+	padding:6px 3px;
+	}
+	
+.submenuCongreso li{
+	margin: 5px 0px 5px 0px;
+	padding:0px 5px 0px 5px;
+	}	
+
+.submenuCongreso a, .submenuCongreso a:active, .submenuCongreso a:visited{
+	text-decoration: none;
+	font-size:12px;
+	color:#848484;
+	font-size: 14px;
+}	
+
+.submenuCongreso .activa{
+font-weight:bold;
+}
+
+.submenuCongreso li{
+display:inline;
+}
+
+#cabeceira .activa{
+font-weight:bold;
+}
+
+.JISBD .submenuCongreso{
+  border-top:2px solid #007333;
+  background-color:  #dff1e7;
+}
+
+.JISBD .submenuCongreso a, .JISBD .submenuCongreso a:active, .JISBD .submenuCongreso a:visited{
+	color:#007333;
+}	
+
+.PROLE .submenuCongreso{
+  border-top:2px solid #3e0073;
+  background-color:  #eee6f5;
+}
+
+.PROLE .submenuCongreso a, .PROLE .submenuCongreso a:active, .PROLE .submenuCongreso a:visited{
+	color:#3e0073;
+}	
+
+.JCIS .submenuCongreso{
+  border-top:2px solid #b3b500;
+  background-color:  #fbfbc6;
+}
+
+.JCIS .submenuCongreso a, .JCIS .submenuCongreso a:active, .JCIS .submenuCongreso a:visited{
+	color:#b3b500;
+}	
+
+
+/* ==================== Estilos do menú de segundo nivel para o footer ======== */
+
+#footer .submenuCongreso{
+  border-top:0px;
+  padding:0px;
+  height: 17px;
+}
+
+#footer .submenuCongreso ul{
+  padding:0px 0px 0px 10px;
+}
+
+.JISBD #footer  .submenuCongreso{
+  border-bottom:2px solid #007333;
+}
+
+.PROLE #footer  .submenuCongreso{
+  border-bottom:2px solid #3e0073;
+}
+
+.JCIS #footer  .submenuCongreso{
+  border-bottom:2px solid #b3b500;
+}

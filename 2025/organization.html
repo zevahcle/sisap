@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+  <title>SISAP 2025</title>
+  <link rel="stylesheet" href="/2025/css/main.css">
+  <link rel="canonical" href="https://www.sisap.org/2025/"> 
+</head>
+
+
+<body> 
+  <div id="page">
+    <header>
+      <img style="width:100%" src="/2025/images/Reykjavik_red.jpg" alt="Reykjavik" id="topbg" />
+      <a href="/" id="headerlogo">
+          <img src="/2025/images/sisap.png" alt="SISAP" /><br>
+          <big>SISAP 2025</big><br> October 1st-3rd <br>Reykjavik, Iceland
+      </a>
+  </header> 
+
+    <main id="main">
+      <h1>Organization - SISAP 2025</h1>
+      <h2>Steering Committee</h2>
+      <ul>
+        <li>Giuseppe Amato, CNR-ISTI, Italy</li>
+        <li>Edgar Ch&aacute;vez, CICESE, M&eacute;xico</li>
+        <li>St&eacute;phane Marchand-Maillet, University of Geneva, Switzerland</li>
+        <li>Marco Patella, University of Bologna, Italy</li>
+        <li>Benjamin Kimia,Brown Unversity, USA</li>
+        <li>Oscar Pedreira, University of A Coruña, Spain</li>
+      </ul>
+      <h2>General Co-Chairs</h2>
+      <ul>
+        <li>Björn Þór Jónsson, Reykjavik University, Iceland</li>
+        <li>Lucia Vadicamo, CNR-ISTI, Italy</li>
+      </ul>
+      <h2>Program Committee Co-Chairs</h2>
+      <ul>
+        <li>Giuseppe Amato, CNR-ISTI, Italy</li>
+        <li>Vladimir Mic, Aarhus University, Denmark </li>
+        <li>Agma J. M. Traina, University of São Paulo, Brazil </li>
+      </ul>
+      <h2>Demonstration Chair</h2>
+      <ul>
+        <li>Gylfi Þór Guðmundsson, Reykjavik University, Iceland
+          </li>
+      </ul>
+      <h2>PhD Symposium Chair</h2>
+      <ul>
+        <li>Laurent Amsaleg, IRISA-CNRS, France          
+          </li>
+      </ul>
+      <h2>SISAP Indexing Challenge Chairs</h2>
+      <ul>
+        <li>Eric S. Tellez, CICESE-INFOTEC-CONACyT, Mexico</li>
+        <li>Martin Aumüller, ITU Copenhagen, Denmark</li>
+        <li>Vladimir Mic, Aarhus University, Denmark</li>
+        <li>Edgar Ch&aacute;vez, CICESE, M&eacute;xico</li>
+      </ul>
+      <h2>Publications Chair</h2>
+      <ul>
+        <li>Nicola Messina, CNR-ISTI, Italy
+          </li>
+      </ul>
+      <h2>Publicity Chair</h2>
+      <ul>
+        <li>Luca Ciampi, CNR-ISTI, Italy</li>
+        <li>Conrado Martinez, Universitat Politècnica de Catalunya, Spain</li>
+        </ul>
+
+    <h3>Contacts</h3>
+    <li> All SISAP Chairs: <a
+      href="mailto:sisap2025@easychair.org">sisap2025@easychair.org</a>      </li>
+    <li> Technical Program Chairs: <a
+      href="mailto:sisap2025-tpc-chairs@easychair.org">sisap2025-tpc-chairs@easychair.org</a>      </li>
+    <li> Doctoral Symposium Chair: <a
+      href="mailto:sisap2025-phd@easychair.org">sisap2025-phd@easychair.org</a>      </li>
+    <li> Demonstration Chair: <a
+      href="mailto:sisap2025-demo@easychair.org">sisap2025-demo@easychair.org</a>
+  </p>
+    </main>
+
+
+
+    <nav id="sidebar"></nav> <!-- Placeholder for sidebar -->
+    <aside id="aside-container"></aside> <!-- Placeholder for aside (news) -->
+    <footer id="footer-container"></footer> <!-- Placeholder for footer -->
+</div>
+<script>
+    // Load the  from the common html files
+    function loadHTML(id, url) {
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(id).innerHTML = data;
+            })
+            .catch(error => console.error('Error loading the HTML file: ', error));
+    }
+
+    // Load HTML files
+    window.onload = function() {
+        loadHTML("header-container", "/2025/includes/header.html");
+        loadHTML("footer-container", "/2025/includes/footer.html");
+        loadHTML("aside-container", "/2025/includes/aside.html");
+        loadHTML("sidebar", "/2025/includes/nav.html");
+    }
+</script>
+</body>
+
+</html>

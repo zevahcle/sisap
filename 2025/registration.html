@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <title>SISAP 2025</title>
+    <link rel="stylesheet" href="/2025/css/main.css">
+    <link rel="canonical" href="https://www.sisap.org/2025/"> 
+</head>
+
+
+<body> 
+    <div id="page">
+        <header>
+            <img style="width:100%" src="/2025/images/Reykjavik_red.jpg" alt="Reykjavik" id="topbg" />
+            <a href="/" id="headerlogo">
+                <img src="/2025/images/sisap.png" alt="SISAP" /><br>
+                <big>SISAP 2025</big><br> October 1st-3rd <br>Reykjavik, Iceland
+            </a>
+        </header> 
+
+    <main id="main">
+
+    <h1 >SISAP 2025 - Registration</h1>
+    <p> 
+        <b>Details about registration fees and the registration link will be published shortly. </b>
+
+    </p>
+
+     <div>&nbsp;</div>
+            
+      
+    <p>
+        Please note the following <b>policy for accepted papers</b> regarding registration:
+         <ul>
+    <li>
+      Each accepted paper must have at least one author with <b> a full (regular) registration</b>.<br>
+      <em>Student registration is not valid for this purpose, unless the author is a PhD student presenting only a Doctoral Symposium paper. In that case, the student registration fee applies.</em>
+    </li>
+    <li>
+      A full registration of an accepted SISAP paper can <strong>cover one additional paper</strong>, provided that:
+      <ul>
+        <li>(a) the additional paper is <b> of type Doctoral Symposium</b>, <b>Demonstration</b>, or <b>Indexing Challenge</b>, and</li>
+        <li>(b) the <b> same registered author</b> is also the presenting author of both papers.</li>
+      </ul>
+    </li>
+    <li>
+      A single registration <strong>cannot cover two regular or special session papers</strong>. In that case, each paper must have its own separate full registration..
+    </li>
+  </ul>
+    </p>
+
+
+
+<!-- 
+    <div>
+        <div style="font-size: 11pt; line-height: 1.25em;">
+
+            Registration to SISAP 2025 provides access to all three days of the conference, including breakfast, 
+            lunch, coffee breaks, the conference banquet, and the Newport social outing. <b>Please note that each accepted
+            paper is expected to have one author with a full registration</b>, <i>i.e.</i>, either a Regular registration or 
+            a Student registratrion.
+
+            <div>&nbsp;</div>
+            
+            One-day registration provides access to a single day of the conference, perfect for local people who would
+            like to attend select presentations or keynote. The admission includes the meals and coffee breaks,
+            but <b>does not</b> provide access to the conference banquet or the Newport outing. The specific day must be 
+            chosen at the time of purchase, so please refer to the <a href="program.html">conference program</a>. <b>A person 
+            is limited to only a single one-day registration</b>, so those who would like to attend multiple days must purchase
+            a full registration. 
+            <div>&nbsp;</div>
+
+            The next table shows the registration fees and the deadlines for registration:
+            <div>&nbsp;</div>
+            
+            <center>
+                <table width="400" style="text-align: left;">
+                    <tr>
+                        <th>Type</th>
+                        <th>Fee</th>
+                        <th>Deadline</th>
+                    </tr>
+                    <tr>
+                        <td>Regular registration</td>
+                        <td>$575</td>
+                        <td><s>September 13th, 2024</s> October 21st, 2024</td>
+                    </tr>
+                    <tr>
+                        <td>Student registration</td>
+                        <td>$450</td>
+                        <td><s>September 13th, 2024</s> October 21st, 2024</td>
+                    </tr>
+                    <tr>
+                        <td>Regular one-day registration</td>
+                        <td>$100</td>
+                        <td>November 6th, 2024</td>
+                    </tr>
+                    <tr>
+                        <td>Student one-day registration</td>
+                        <td>$50</td>
+                        <td>November 6th, 2024</td>
+                    </tr>
+                </table>
+            </center>
+
+            <div>&nbsp;</div>
+
+            You may register for the conference through the 
+            <a href="https://payment.brown.edu/C20460_ustores/web/product_detail.jsp?PRODUCTID=5371&SINGLESTORE=true">registration gateway</a>. 
+            
+            <div>&nbsp;</div>
+
+            Those purchasing a full registration will be asked questions about their attendance to WaterFire and the Newport 
+            Outing. Please view the descriptions of these events on the <a href="venue.html">venue page</a>.  
+        </div>
+    </div>   -->
+ 
+</main>
+   <nav id="sidebar"></nav> <!-- Placeholder for sidebar -->
+    <aside id="aside-container"></aside> <!-- Placeholder for aside (news) -->
+    <footer id="footer-container"></footer> <!-- Placeholder for footer -->
+</div>
+<script>
+    // Load the  from the common html files
+    function loadHTML(id, url) {
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(id).innerHTML = data;
+            })
+            .catch(error => console.error('Error loading the HTML file: ', error));
+    }
+
+    // Load HTML files
+    window.onload = function() {
+        // loadHTML("header-container", "/2025/includes/header.html");
+        loadHTML("footer-container", "/2025/includes/footer.html");
+        loadHTML("aside-container", "/2025/includes/aside.html");
+        loadHTML("sidebar", "/2025/includes/nav.html");
+    }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+  <title>SISAP 2025</title>
+  <link rel="stylesheet" href="/2025/css/main.css">
+  <link rel="canonical" href="https://www.sisap.org/2025/"> 
+</head>
+
+<body>
+  <div id="page">
+    <header>
+      <img style="width:100%" src="/2025/images/Reykjavik_red.jpg" alt="Reykjavik" id="topbg" />
+      <a href="/" id="headerlogo">
+          <img src="/2025/images/sisap.png" alt="SISAP" /><br>
+          <big>SISAP 2025</big><br> October 1st-3rd <br>Reykjavik, Iceland
+      </a>
+  </header> 
+<main id="main">
+
+    <h1>Accomodation</h1>
+
+  <p>
+        SISAP 2025 will be held at <strong><a href="https://maps.app.goo.gl/ANjzfuKew4FReUCF6" target="_blank" rel="noopener noreferrer">Nauthóll</a></strong>, next to Reykjavík University. There are several accommodation options available within walking distance or a short bus/taxi ride from the venue.
+      </p>
+    
+
+</p>   <br>
+
+   
+        <ul>
+         <li>
+          <strong> <a href="https://www.leifureiriksson.is/" target="_blank" rel="noopener noreferrer">Hotel Leifur Eiríksson</a></strong> (located in the city centre).<br />
+          A limited number of rooms have been prebooked for SISAP attendees for the period 30 September – 4 October.
+          For additional nights, please contact <a href="mailto:info@komum.is">info@komum.is</a>.<br />
+          These rooms can be booked through the SISAP 2025 registration system.
+        </li>
+        <li>   
+            <strong><a href="https://www.icelandairhotels.com/en/hotels/reykjavik-natura" target="_blank" rel="noopener noreferrer">Icelandair Hotel Reykjavik Natura</a></strong><br>
+         This hotel is very close to the conference venue, located by the domestic airport and within 15 minutes' walk from Nauthóll.<br />
+
+         <i> You can book directly via the hotel website with a 10% discount using this
+        <a href="https://be.synxis.com/?adult=1&altdest=SWEST&arrive=2025-09-30&chain=15503&child=0&config=icelandair&configcode=icelandair&coupon=SAVE10&currency=ISK&depart=2025-10-04&hotel=59630&level=hotel&locale=en-US&productcurrency=ISK&rooms=1" target="_blank" rel="noopener noreferrer">
+            booking link
+        </a>.</i>   
+        </li>
+     <br>
+        <li>           
+    You can also explore other nearby options via  <a href="https://maps.app.goo.gl/dF1nCnt9UsH4zi7R7" target="_blank" rel="noopener noreferrer">this Google Map search</a>.
+   
+        </li>
+        </ul>
+     
+
+
+  </figure>
+</main>
+<nav id="sidebar"></nav>
+<aside id="aside-container"></aside>
+<footer id="footer-container"></footer>
+</div>
+<script>
+// Load the  from the common html files
+function loadHTML(id, url) {
+    fetch(url)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(id).innerHTML = data; 
+        })
+        .catch(error => console.error('Error loading the HTML file: ', error));
+}
+
+// Load HTML files
+window.onload = function() {
+    // loadHTML("header-container", "/2025/includes/header.html");
+    loadHTML("footer-container", "/2025/includes/footer.html");
+    loadHTML("aside-container", "/2025/includes/aside.html");
+    loadHTML("sidebar", "/2025/includes/nav.html");
+}
+</script>
+</body>
+</html>

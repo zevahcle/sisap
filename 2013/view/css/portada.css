@@ -1,0 +1,42 @@
+
+.elementoPortada {
+	clear: both;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.elementoPortada .titulo {
+	margin-bottom: 0.7em;
+}
+
+.elementoPortada .imaxe {
+	float: left;
+	margin-right: 0.72em; /* Compensar diferencia de tamaño co título */
+	margin-bottom: 0.72em;
+}
+
+.elementoPortada .data {
+	line-height: 1em;
+	font-style: italic;
+	margin-bottom: 0.5em;
+}
+
+.elementoPortada .lugar {
+	line-height: 1em;
+	font-style: italic;
+	margin-bottom: 0.5em;
+}
+
+.elementoPortada .resumo {
+	margin-top: 0.5em;
+}
+
+
+.elementoPortada .galeriafotografica, .elementoPortada .galeriavideos {
+	font-size:0.8em;
+	padding-top:3px;
+}
+
+.elementoPortada .galeriafotografica img, .elementoPortada .galeriavideos img{
+	vertical-align:bottom;
+}

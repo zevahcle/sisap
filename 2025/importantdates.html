@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+  <title>SISAP 2025</title>
+  <link rel="stylesheet" href="/2025/css/main.css">
+  <link rel="canonical" href="https://www.sisap.org/2025/"> 
+</head>
+
+<body>
+  <div id="page">
+    <header>
+      <img style="width:100%" src="/2025/images/Reykjavik_red.jpg" alt="Reykjavik" id="topbg" />
+      <a href="/" id="headerlogo">
+          <img src="/2025/images/sisap.png" alt="SISAP" /><br>
+          <big>SISAP 2025</big><br> October 1st-3rd <br>Reykjavik, Iceland
+      </a>
+  </header> 
+
+    <main id="main">
+      <h1>Important Dates - SISAP 2025</h1>
+
+      <h2>Important Dates for Regular and Special Session Papers</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td>Abstract deadline</td>
+            <td><s>May 11, 2025 (AoE), May 25, 2025 (AoE) </s> Extended to: <b>June 1, 2025 (AoE) </b></td> 
+            <!-- <td><s>July 1, 2024</s><b>Extended to: July 14, 2024</b></td> -->
+          </tr>
+          <tr>
+            <td>Paper deadline</td>
+            <td><s> May 18, 2025 (AoE)</s> Extended to: <b>June 1, 2025 (AoE)</b>
+          </tr>
+          <tr>
+            <td>Paper notification</td>
+            <td>July 14, 2025 (AoE)
+          </tr>
+          <tr>
+            <td>Camera-ready due</td>
+            <td>July 31, 2025</td>
+          </tr>
+          <tr>
+            <td>Conference</td>
+            <td>October 1-3, 2025</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Important Dates for Demonstration and Doctoral Symposium Papers</h2>
+      <table>
+        <tbody>
+          <tr>
+          <tr>
+            <td>Paper deadline</td>
+            <td><s>June 6, 2025 (AoE)</s> Extended to: <b>June 16, 2025 (AoE)</b>
+          </tr>
+          <tr>
+            <td>Paper notification</td>
+            <td>July 14, 2025 (AoE)
+          </tr>
+          <tr>
+            <td>Camera-ready due</td>
+            <td>July 31, 2025</td>
+          </tr>
+          <tr>
+            <td>Conference</td>
+            <td>October 1-3, 2025</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Important Dates for Special Session Proposals</h2>
+      <table>
+        <tbody>
+          <tr>
+          <tr>
+            <td>Special Session Proposal deadline</td>
+            <td> <s> February 3, 2025 (AoE)</s>, <s> February 10, 2025 (AoE)</s>  Extended to: <b>February 24, 2025 (AoE)</b>
+          </tr>
+          <tr>
+            <td>Notification</td>
+            <td><s> February 17, 2025 (AoE)</s>  Extended to: <b>February 26, 2025 (AoE)</b>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>All deadlines are given in <a href="https://en.wikipedia.org/wiki/Anywhere_on_Earth">Anywhere on Earth</a>
+        time.</p>
+
+      </main>
+      <nav id="sidebar"></nav>
+      <aside id="aside-container"></aside>
+      <footer id="footer-container"></footer>
+    </div>
+    <script>
+      // Load the  from the common html files
+      function loadHTML(id, url) {
+          fetch(url)
+              .then(response => response.text())
+              .then(data => {
+                  document.getElementById(id).innerHTML = data; 
+              })
+              .catch(error => console.error('Error loading the HTML file: ', error));
+      }
+  
+      // Load HTML files
+      window.onload = function() {
+          // loadHTML("header-container", "/2025/includes/header.html");
+          loadHTML("footer-container", "/2025/includes/footer.html");
+          loadHTML("aside-container", "/2025/includes/aside.html");
+          loadHTML("sidebar", "/2025/includes/nav.html");
+      }
+  </script>
+  </body>
+  </html>

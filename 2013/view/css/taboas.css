@@ -1,0 +1,33 @@
+/* Estilos para as táboas da aplicación*/
+
+table.horizontal th{
+	text-align: right;
+}
+
+table {
+	border: 1px solid #999;
+	
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+th {
+	background-color: #999;
+	color: white;
+}
+
+td {
+	border: 1px solid #999;
+}
+
+td.icono {
+	text-align: center;
+}
+
+td.categoriaver{
+text-align: right;
+}
+
+td.categoriaver a{
+text-decoration: none;
+}

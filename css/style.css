@@ -1,0 +1,213 @@
+/* Hoja de estilos para SISAP - Home */
+
+/* Reset del css*/
+html, body, div,
+h1, h2, h3,
+p, a, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	background-color: #000000;
+	font-family:"Inconsolata", Helvetica, sans-serif;
+	background-repeat: no-repeat; /* repeat-x, repeat-y, no-repeat, */
+	background-attachment: fixed;
+	background-position: center bottom; /* left, left top, left center, left bottom, 
+	right top, right center, right bottom, center top, center center, 
+	center bottom, ##px ##px */
+
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, #000000 0%, #FFFFFF 200%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #000000 0%, #FFFFFF 200%);
+
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #000000 0%, #FFFFFF 200%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000000), color-stop(2, #FFFFFF));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #000000 0%, #FFFFFF 200%);
+
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, #000000 0%, #FFFFFF 200%);
+	}
+	
+#contenedor{
+	width: 100%;
+	margin-left: auto;
+	margin-right:auto;
+	background-color: #transparent;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: 0px bottom;
+	}
+	
+#header{
+	height: 320px;
+	position: absolute
+	background-color: #transparent;
+	background-image: url("../images/header3.png");
+	background-repeat:no-repeat;
+	}
+	
+	
+#contenido{
+	background-color: #transparent;
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	padding-top: 0px;
+	padding-bottom: 150px;
+	}
+	
+	#cajablog {
+	width: 700px;
+	margin-left: auto;
+	background-color: #transparent;
+	}
+	
+	#cajablog p{
+	margin: 30px;
+	font-family:"Mako", Helvetica, sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+	text-align: right;
+	}
+	
+	#cajablog p a{
+	color: #ffffff;
+	text-decoration: none;
+	border-bottom-style: solid;
+	border-color: #ffffff;
+	border-width: 1px;
+	}
+	
+	#cajablog h1{
+	padding: 25px;
+	padding-bottom: 0;
+	font-family: 'Mako', sans-serif;
+	text-align: right;
+	font-size: 35px;
+	color: #ffffff;
+	}
+	
+	#cajablog h1 a, #cajablog h1 a:link h1, #cajablog h1 a:hover h1, #cajablog h1 a:link h1 {
+	color: #ffffff;
+	text-decoration: none;
+	}
+	
+	#cajablog h2, #cajablog h2 a{
+	padding: 25px;
+	font-family: 'Mako', sans-serif;
+	text-align: right;
+	font-size: 25px;
+	color: #ffffff;
+	}
+	
+	#cajablog h3{
+	padding: 25px;
+	font-family: 'Mako', sans-serif;
+	text-align: right;
+	font-size: 19px;
+	color: #ffffff;
+	}
+	
+	#cajablog img{
+	margin-left: 600px;
+	margin-bottom: 15px;
+	}
+
+	
+#menu{
+	margin-left: 70px;
+	height: 600px;
+	background-color: #transparent;
+	background-image: url("../images/fondomenu.png");
+	background-repeat:no-repeat;
+	font-family:"helvetica", Inconsolata, sans-serif;
+	font-size: 15px;
+	text-align: left;
+	float: left;
+	position:absolute; 
+	top: 270px;
+	}
+	
+	#menu ul {
+	margin: 0;
+	list-style-type: none;
+	padding: 0;
+	padding-left: 90px;
+	}
+	
+	#menu ul li {
+	display: block;
+	margin-right:630px;
+	padding-top: 40px;
+	}
+	
+	#menu ul li a {
+	text-decoration: none;
+	color: #ffffff;
+	position:relative;
+	top:25px;
+	right:10px;
+	}
+	
+	#menu ul li a:hover {
+	border-bottom-style: solid;
+	border-color: #ffffff;
+	border-width: 2px;
+	}
+	
+	
+#banner{
+	height: 500px;
+	background-color: #transparent;
+	background-repeat:no-repeat;
+	font-family:"helvetica", Inconsolata, sans-serif;
+	background-image: url("../images/banner3.png");
+	background-size: 250px;
+	font-size: 9px;
+	text-align: left;
+	position:absolute;
+	top:520px;
+	left:75px;
+	}
+	
+	#banner h1{
+	font-family: 'Mako', sans-serif;
+	font-size: 14px;
+	text-align: left;
+	position:absolute;
+	top:25px;
+	}
+	
+	#banner ul {
+	margin: 0;
+	list-style-type: none;
+	padding-left: 70px;
+	}
+	
+	#banner ul li {
+	display: block;
+	margin-right:730px;
+	padding-top: 15px;
+	}
+	
+	#banner ul li a {
+	text-decoration: none;
+	color: #000000;
+	position:relative;
+	top:45px;
+	right:10px;
+	}
+	
+	#banner ul li a:hover {
+	border-bottom-style: solid;
+	border-color: #000000;
+	border-width: 2px;
+	}
