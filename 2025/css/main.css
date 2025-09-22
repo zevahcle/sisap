@@ -826,3 +826,29 @@ a.gg:hover {
     cursor: default; /* Imposta il cursore normale */
     opacity: 0.6; /* Rende il testo meno prominente */
 }
+
+
+.author-hover {
+    text-decoration: none; /* rimuove la sottolineatura se non la vuoi */
+}
+
+.author-hover:hover {
+    color: darkblue;              /* quando ci passi sopra */
+    }
+
+.author-hover img {
+    display: none;              /* l'immagine è nascosta di default */
+    position: absolute;         /* posizione flottante */
+    margin-top: 20px;           /* distanza dal testo */
+    margin-left: 10px;
+    border: 1px solid darkblue;
+    background: #fff;
+    padding: 5px;
+    max-width: 150px;           /* dimensione max */
+    z-index: 100;
+    }
+
+    .author-hover:hover img {
+    display: block;             /* appare solo al passaggio del mouse */
+    }
+ 
