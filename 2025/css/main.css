@@ -852,3 +852,17 @@ a.gg:hover {
     display: block;             /* appare solo al passaggio del mouse */
     }
  
+.link-style {
+   cursor: default;       /* niente mano cliccabile */
+   color: #7f0a0f;
+   text-decoration: none;
+}
+
+.online-flag {
+  background-color: #eee;
+  color: #333;
+  font-size: 0.8em;
+  padding: 2px 5px;
+  border-radius: 4px;
+  margin-left: 5px;
+}
