@@ -1,0 +1,111 @@
+!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+  <title>SISAP 2025</title>
+  <link rel="stylesheet" href="/2025/css/main.css">
+  <link rel="canonical" href="https://www.sisap.org/2025/"> 
+</head>
+
+<body>
+  <div id="page">
+    <header>
+      <img style="width:100%" src="/2025/images/Reykjavik_red.jpg" alt="Reykjavik" id="topbg" />
+      <a href="/" id="headerlogo">
+          <img src="/2025/images/sisap.png" alt="SISAP" /><br>
+          <big>SISAP 2025</big><br> October 1st-3rd <br>Reykjavik, Iceland
+      </a>
+  </header>
+    <main id="main">
+<hr>
+    <h1>Best Paper Award</h1>
+ <p>
+    <ul>
+      <li>Erik Thordsen and Erich Schubert<br>
+        <strong>Theoretical and Practical Insights into Graph-Based Indexing</strong>
+      </li>
+    </ul>
+    </p>
+
+    <h1>Best Student Paper Award</h1>
+ <p>
+    <ul>
+      <li>
+        Fabrizio Angiulli, Fabio Fassetti and Maria Pia Zupi. <br>
+        <strong>CF-OOD: Concentration-Free density estimation for Relieable Out-of-Distribution Detection</strong>
+      </li>
+    </ul>
+    </p>
+
+    <h1>Best Paper Candidates</h1>
+    The following papers were in consideration for the best paper awards, and will be invited to submit an extended
+    version to the special issue of <a href="https://www.sciencedirect.com/journal/information-systems/">Information Systems</a>:
+
+     <ul>
+      
+    <br>
+    <li>
+         Richard Connor, Alan Dearle and Ben Claydon. <br>
+        <strong>Equi-Voronoi Polytopes: A Geometric Basis for 2-bit Quantisation</strong>
+        
+    </li>
+<br>
+    <li>
+        Fabrizio Angiulli, Fabio Fassetti and Maria Pia Zupi. <br>
+        <strong>CF-OOD: Concentration-Free density estimation for Relieable Out-of-Distribution Detection</strong>
+    </li>
+<br>
+    <li>
+      Bastian Jäckl, Vojtěch Kloda, Daniel A. Keim and Jakub Lokoč<br>
+      <strong>Dynamic Sub-Region Search in Homogeneous Collections using CLIP</strong>
+    </li>
+<br>
+    <li>
+        Camilla Birch Okkels, Erik Thordsen, Erich Schubert, Martin Aumüller and Arthur Zimek<br>
+        <strong>Approximate Single-Linkage Clustering Using Graph-based Indexes: MST-based Approaches and Incremental Searchers</strong>
+    </li>
+<br>
+    <li>
+      Michael E. Houle, Vincent Oria and Hao Xu <br>
+        <strong>Efficient Local Intrinsic Dimensionality Estimation in Evolving Deep Representations</strong>
+    </li>
+<br>
+    <li>
+      Erik Thordsen and Erich Schubert<br>
+        <strong>Theoretical and Practical Insights into Graph-Based Indexing</strong>
+    </li>
+ </ul>
+    
+     </main>
+    <nav id="sidebar"></nav>
+    <aside id="aside-container"></aside>
+    <footer id="footer-container"></footer>
+  </div>
+  <script>
+    // Load the  from the common html files
+    function loadHTML(id, url) {
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(id).innerHTML = data; 
+            })
+            .catch(error => console.error('Error loading the HTML file: ', error));
+    }
+
+    // Load HTML files
+    window.onload = function() {
+        // loadHTML("header-container", "/2025/includes/header.html");
+        loadHTML("footer-container", "/2025/includes/footer.html");
+        loadHTML("aside-container", "/2025/includes/aside.html");
+        loadHTML("sidebar", "/2025/includes/nav.html");
+    }
+</script>
+</body>
+</html>
