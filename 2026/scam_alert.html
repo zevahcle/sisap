@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+  <title>SISAP 2025</title>
+  <link rel="stylesheet" href="/2025/css/main.css">
+  <link rel="canonical" href="https://www.sisap.org/2025/"> 
+</head>
+
+<body>
+  <div id="page">
+    <header>
+      <img style="width:100%" src="/2025/images/Reykjavik_red.jpg" alt="Reykjavik" id="topbg" />
+      <a href="/" id="headerlogo">
+          <img src="/2025/images/sisap.png" alt="SISAP" /><br>
+          <big>SISAP 2025</big><br> October 1st-3rd <br>Reykjavik, Iceland
+      </a>
+  </header> 
+<main id="main">
+        <section id="scam-alert" style="background-color: #ffe6e6; padding: 20px; border: 2px solid #ff4d4d; border-radius: 8px; margin-bottom: 20px;">
+          <h2 style="color: #cc0000;">Scam Alert – Exploreera Reservation Emails</h2>
+          <p>We have been informed that a company operating under the name <strong>Exploreera</strong> (using the email address <strong>reservation.nl@exploreera.info</strong>) is contacting attendees of <strong>SISAP 2025</strong>, claiming to offer accommodation services.</p>
+          <p><strong>Please be aware:</strong></p>
+          <ul>
+            <li>This is a <strong>spam/scam operation</strong> and is <strong>not affiliated with SISAP 2025</strong> in any way.</li>
+            <li><strong>Do not respond</strong> to their emails.</li>
+            <li><strong>Do not provide any personal or payment information.</strong></li>
+          </ul>
+          <p>Please note that the official agency handling registrations and some accommodation options for SISAP 2025 is <strong>Komum Conferences</strong> (<strong>info@komum.is</strong>).</p>
+         
+        </section>
+
+  </figure>
+</main>
+<nav id="sidebar"></nav>
+<aside id="aside-container"></aside>
+<footer id="footer-container"></footer>
+</div>
+<script>
+// Load the  from the common html files
+function loadHTML(id, url) {
+    fetch(url)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(id).innerHTML = data; 
+        })
+        .catch(error => console.error('Error loading the HTML file: ', error));
+}
+
+// Load HTML files
+window.onload = function() {
+    // loadHTML("header-container", "/2025/includes/header.html");
+    loadHTML("footer-container", "/2025/includes/footer.html");
+    loadHTML("aside-container", "/2025/includes/aside.html");
+    loadHTML("sidebar", "/2025/includes/nav.html");
+}
+</script>
+</body>
+</html>
