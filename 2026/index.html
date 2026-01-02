@@ -1,28 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv='cache-control' content='no-cache'>
-        <meta http-equiv='expires' content='0'>
-        <meta http-equiv='pragma' content='no-cache'>
-        <title>SISAP 2026</title>
-        <link rel="stylesheet" href="/2026/css/main.css">
-        <link rel="canonical" href="https://www.sisap.org/2026/"> 
-    </head>
-
+    <head id="head-container"></head>
 
     <body> 
         <div id="page">
-            <header>
-                <img style="width:100%" src="/2026/images/Brno_red.png" alt="Brno" id="topbg" />
-                <a href="/" id="headerlogo">
-                    <img src="/2026/images/sisap.png" alt="SISAP" /><br>
-                    <big>SISAP 2026</big><br>October 14th-16h<br>Brno, Czechia
-                </a>
-            </header> 
+            <header id="header-container"></header>
 
             <main id="main">
                 <h1>19th International Conference on <br/> Similarity Search and Applications, SISAP 2026</h1>
@@ -90,7 +73,8 @@
 
             // Load HTML files
             window.onload = function () {
-                // loadHTML("header-container", "2026/includes/header.html");
+                loadHTML("head-container", "/2026/includes/head.html");
+                loadHTML("header-container", "/2026/includes/header.html");
                 loadHTML("footer-container", "/2026/includes/footer.html");
                 loadHTML("aside-container", "/2026/includes/aside.html");
                 loadHTML("sidebar", "/2026/includes/nav.html");

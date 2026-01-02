@@ -1,28 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv='cache-control' content='no-cache'>
-        <meta http-equiv='expires' content='0'>
-        <meta http-equiv='pragma' content='no-cache'>
-        <title>SISAP 2026</title>
-        <link rel="stylesheet" href="/2026/css/main.css">
-        <link rel="canonical" href="https://www.sisap.org/2026/"> 
-    </head>
-
+    <head id="head-container"></head>
 
     <body> 
         <div id="page">
-            <header>
-                <img style="width:100%" src="/2026/images/Brno_red.png" alt="Brno" id="topbg" />
-                <a href="/" id="headerlogo">
-                    <img src="/2026/images/sisap.png" alt="SISAP" /><br>
-                    <big>SISAP 2026</big><br>October 14th-16h<br>Brno, Czechia
-                </a>
-            </header> 
+            <header id="header-container"></header>
 
             <main id="main">
                 <h1>Call for papers - SISAP 2026</h1>
@@ -33,15 +16,15 @@
                 <h2>Important Dates (all deadlines are AoE)</h2>
                 <h3>Regular and Special Session Papers</h3>
                 <ul>
-                    <li>Abstract submission deadline: <b>Friday, 22 May 2026</b></li>
-                    <li>Paper submission  deadline: <b>Friday, 29 May 2026</b></li>
+                    <li>Abstract submission deadline: <b>Friday, 22 May 2026 TODO</b></li>
+                    <li>Paper submission  deadline: <b>Friday, 29 May 2026 TODO</b></li>
                     <li>Acceptance  notification: Monday, 27 July 2026</li>
                     <li>Camera-ready due: Thursday, 13 August 2026</li>
                 </ul>
                 <h3>Demonstration and Doctoral Symposium Papers</h3>
                 <ul>
                     <li>Paper submission deadline: <b>Wednesday, 17 June 2026</b></li>
-                    <li>Acceptance notification: Saturday, 25 July 2026</li>
+                    <li>Acceptance notification: Saturday, 25 July 2026 TODO</li>
                     <li>Camera-ready due: Tuesday, 11 August 2026</li>
                 </ul>
                 <h2>Scope</h2>
@@ -134,56 +117,6 @@
                 <p>Papers  have to be submitted in PDF format through <a
                         href=https://easychair.org/conferences/?conf=sisap2025>EasyChair</a>.  Please see the <a href="./guidelines.html"> submission guidelines </a></p>
 
-                <!-- <h2>Organization</h2>
-                <p>Steering Committee</p>
-                <ul>
-                  <li>Giuseppe Amato, ISTI-CNR, Italy</li>
-                  <li>Edgar Ch&aacute;vez, CICESE, M&eacute;xico</li>
-                  <li>St&eacute;phane Marchand-Maillet, University of Geneva, Switzerland</li>
-                  <li>Marco Patella, University of Bologna, Italy</li>
-                  <li>Ilaria Bartolini, University of Bologna, Italy</li>
-                  <li>Oscar Pedreira, University of A Coruña, Spain</li>
-                </ul>
-                <p>General Co-Chairs</p>
-                <ul>
-                  <li>Björn Þór Jónsson, Reykjavik University, Iceland</li>
-                  <li>Lucia Vadicamo, CNR-ISTI, Italy</li>
-                </ul>
-                <p>Program Committee Co-Chairs</p>
-                <ul>
-                  <li>Giuseppe Amato, ISTI-CNR, Italy</li>
-                  <li>Vladimir Mic, Aarhus University, Denmark </li>
-                  <li>Agma J. M. Traina, University of São Paulo, Brazil </li>
-                </ul>
-                <p>Demonstration Chair</p>
-                <ul>
-                  <li>Gylfi Þór Guðmundsson, Reykjavik University, Iceland
-                    </li>
-                </ul>
-                <p>PhD Symposium Chair</p>
-                <ul>
-                  <li>Laurent Amsaleg, IRISA-CNRS, France          
-                    </li>
-                </ul>
-                <p>Publications Chairs</p>
-                <ul>
-                  <li>Nicola Messina, ISTI-CNR, Italy
-                    </li>
-                </ul>
-                <p>SISAP Indexing Challenge Chairs</p>
-                <ul>
-                  <li>Eric S. Tellez, CICESE-INFOTEC-CONACyT, Mexico</li>
-                  <li>Martin Aumüller, ITU Copenhagen, Denmark</li>
-                  <li>Vladimir Mic, Aarhus University, Denmark</li>
-                  <li>Edgar Ch&aacute;vez, CICESE, M&eacute;xico</li>
-                </ul>
-                <p>Publicity Chairs</p>
-                <ul>
-                  <li>Luca Ciampi, ISTI-CNR, Italy</li>
-              
-                </ul> --> 
-
-
             </main>
             <nav id="sidebar"></nav>
             <aside id="aside-container"></aside>
@@ -202,10 +135,11 @@
 
             // Load HTML files
             window.onload = function () {
-                // loadHTML("header-container", "/2025/includes/header.html");
-                loadHTML("footer-container", "/2025/includes/footer.html");
-                loadHTML("aside-container", "/2025/includes/aside.html");
-                loadHTML("sidebar", "/2025/includes/nav.html");
+                loadHTML("head-container", "/2026/includes/head.html");
+                loadHTML("header-container", "/2026/includes/header.html");
+                loadHTML("footer-container", "/2026/includes/footer.html");
+                loadHTML("aside-container", "/2026/includes/aside.html");
+                loadHTML("sidebar", "/2026/includes/nav.html");
             }
         </script>
     </body>
