@@ -16,13 +16,7 @@
 
     <body> 
         <div id="page">
-            <header>
-                <img style="width:100%" src="/2026/images/Brno_red.png" alt="Brno" id="topbg" />
-                <a href="/" id="headerlogo">
-                    <img src="/2026/images/sisap.png" alt="SISAP" /><br>
-                    <big>SISAP 2026</big><br>October 14th-16h<br>Brno, Czechia
-                </a>
-            </header> 
+            <header id="header-container"></header>
 
             <main id="main">
                 <h1>Important Dates - SISAP 2026</h1>
@@ -77,6 +71,7 @@
 
             // Load HTML files
             window.onload = function () {
+                loadHTML("header-container", "/2026/includes/header.html");
                 loadHTML("footer-container", "/2026/includes/footer.html");
                 loadHTML("aside-container", "/2026/includes/aside.html");
                 loadHTML("sidebar", "/2026/includes/nav.html");
