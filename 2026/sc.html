@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv='cache-control' content='no-cache'>
+        <meta http-equiv='expires' content='0'>
+        <meta http-equiv='pragma' content='no-cache'>
+        <title>SISAP 2026</title>
+        <link rel="stylesheet" href="/2026/css/main.css">
+        <link rel="canonical" href="https://www.sisap.org/2026/"> 
+    </head>
+
+    <body> 
+        <div id="page">
+            <header>
+                <img style="width:100%" src="/2026/images/Brno_red.png" alt="Brno" id="topbg" />
+                <a href="/" id="headerlogo">
+                    <img src="/2026/images/sisap.png" alt="SISAP" /><br>
+                    <big>SISAP 2026</big><br>October 14th-16h<br>Brno, Czechia
+                </a>
+            </header> 
+
+            <main id="main">
+
+                <h1>SISAP 2026 - Steering Committee</h1>
+                <h2></h2>
+                <p>Permanent Members</p>
+                <ul>
+                    <li>Giuseppe Amato, CNR-ISTI, Italy</li>
+                    <li>Edgar Ch&aacute;vez, CICESE, México</li>
+                    <li>St&eacute;phane Marchand-Maillet, University of Geneva, Switzerland</li>
+                </ul>
+                <p>Seasonal Members</p>
+                <ul>
+                    <li>Benjamin Kimia, Brown Unversity, USA</li>
+                    <li>Björn Þór Jónsson, Reykjavik University, Iceland</li>
+                    <li>Lucia Vadicamo, CNR-ISTI, Italy</li>
+                </ul>
+
+                <p>Honorary Members</p>
+                <ul>
+                    <li>Laurent Amsaleg, CNRS-IRISA, France</li>                    
+                    <li>Michael E. Houle, New Jersey Institute of Technology, United States</li>                    
+                    <li>Pavel Zezula, Masaryk University, Brno, Czech Republic</li>                    
+                </ul>
+
+            </main>
+
+
+
+            <nav id="sidebar"></nav> <!-- Placeholder for sidebar -->
+            <aside id="aside-container"></aside> <!-- Placeholder for aside (news) -->
+            <footer id="footer-container"></footer> <!-- Placeholder for footer -->
+        </div>
+        <script>
+            // Load the  from the common html files
+            function loadHTML(id, url) {
+                fetch(url)
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById(id).innerHTML = data;
+                        })
+                        .catch(error => console.error('Error loading the HTML file: ', error));
+            }
+
+            // Load HTML files
+            window.onload = function () {
+                loadHTML("head-container", "/2026/includes/head.html");
+                loadHTML("header-container", "/2026/includes/header.html");
+                loadHTML("footer-container", "/2026/includes/footer.html");
+                loadHTML("aside-container", "/2026/includes/aside.html");
+                loadHTML("sidebar", "/2026/includes/nav.html");
+            }
+        </script>
+    </body>
+
+</html>
