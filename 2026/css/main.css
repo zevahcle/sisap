@@ -404,7 +404,7 @@ body {
 
 #page {
     margin: 0 auto;
-    max-width: 60em;
+    max-width: 80em;
     background-color: #fff;
     display: grid;
     grid-template-columns: 21% 64% 15%;
@@ -834,7 +834,7 @@ a.gg:hover {
 
 .author-hover:hover {
     color: darkblue;              /* quando ci passi sopra */
-    }
+}
 
 .author-hover img {
     display: none;              /* l'immagine è nascosta di default */
@@ -846,23 +846,23 @@ a.gg:hover {
     padding: 5px;
     max-width: 150px;           /* dimensione max */
     z-index: 100;
-    }
+}
 
-    .author-hover:hover img {
+.author-hover:hover img {
     display: block;             /* appare solo al passaggio del mouse */
-    }
- 
+}
+
 .link-style {
-   cursor: default;       /* niente mano cliccabile */
-   color: #7f0a0f;
-   text-decoration: none;
+    cursor: default;       /* niente mano cliccabile */
+    color: #7f0a0f;
+    text-decoration: none;
 }
 
 .online-flag {
-  background-color: #eee;
-  color: #333;
-  font-size: 0.8em;
-  padding: 2px 5px;
-  border-radius: 4px;
-  margin-left: 5px;
+    background-color: #eee;
+    color: #333;
+    font-size: 0.8em;
+    padding: 2px 5px;
+    border-radius: 4px;
+    margin-left: 5px;
 }
