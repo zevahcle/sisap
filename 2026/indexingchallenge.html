@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv='cache-control' content='no-cache'>
+        <meta http-equiv='expires' content='0'>
+        <meta http-equiv='pragma' content='no-cache'>
+        <title>SISAP 2026</title>
+        <link rel="stylesheet" href="/2026/css/main.css">
+        <link rel="canonical" href="https://www.sisap.org/2026/"> 
+    </head>
+
+    <body> 
+        <div id="page">
+            <header>
+                <img style="width:100%" src="/2026/images/Brno_red.png" alt="Brno" id="topbg" />
+                <a href="/" id="headerlogo">
+                    <img src="/2026/images/sisap.png" alt="SISAP" /><br>
+                    <big>SISAP 2026</big><br>October 14th-16h<br>Brno, Czechia
+                </a>
+            </header> 
+
+            <main id="main">
+                <h1>The 4th SISAP Indexing Challenge</h1>
+
+                <p>The International Conference on Similarity Search and Applications (SISAP) will host the Indexing Challenge. For details, visit a <a target="_blank" href="https://sisap-challenges.github.io/2026/index.html">dedicated website</a>.</p>
+            </main>
+            <nav id="sidebar"></nav> <!-- Placeholder for sidebar -->
+            <aside id="aside-container"></aside> <!-- Placeholder for aside (news) -->
+            <footer id="footer-container"></footer> <!-- Placeholder for footer -->
+        </div>
+        <script>
+            // Load the  from the common html files
+            function loadHTML(id, url) {
+                fetch(url)
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById(id).innerHTML = data;
+                        })
+                        .catch(error => console.error('Error loading the HTML file: ', error));
+            }
+
+            // Load HTML files
+            window.onload = function () {
+//                loadHTML("header-container", "/2026/includes/header.html"); causes weird blinking when the page is loaded
+                loadHTML("footer-container", "/2026/includes/footer.html");
+                loadHTML("aside-container", "/2026/includes/aside.html");
+                loadHTML("sidebar", "/2026/includes/nav.html");
+            }
+        </script>
+    </body>
+
+</html>
