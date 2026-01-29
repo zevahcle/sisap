@@ -165,7 +165,8 @@ body {
 	
 	
 #banner{
-	height: 500px;
+	height: 100%;
+	width: 100%;
 	background-color: #transparent;
 	background-repeat:no-repeat;
 	font-family:"helvetica", Inconsolata, sans-serif;
