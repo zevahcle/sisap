@@ -169,8 +169,9 @@ body {
 	background-color: #transparent;
 	background-repeat:no-repeat;
 	font-family:"helvetica", Inconsolata, sans-serif;
-	background-image: url("../images/banner3.png");
-	background-size: 250px;
+	/*background-image: url("../images/banner3.png");*/
+	/*background-size: 250px;*/
+        background-color: #F6EE25;
 	font-size: 9px;
 	text-align: left;
 	position:absolute;
