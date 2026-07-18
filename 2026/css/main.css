@@ -869,5 +869,6 @@ a.gg:hover {
 }
 
 .hotelImage{
-    height: 5em;
+    height: 8em;
+    float: right;
 }
