@@ -887,7 +887,8 @@ a.gg:hover {
     flex: 0 0 auto;
 }
 
-.hotelPhoto a figure {
+.hotelPhoto figure {
+    display: inline-block;
     margin: 0;
     text-align: right;
 } 
