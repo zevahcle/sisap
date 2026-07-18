@@ -472,7 +472,7 @@ header a:visited {
     padding: 1ex;
     font-family: "Yanone Kaffeesatz", sans-serif;
     line-height: 1.4;
-    font-size: 1.2rem;    
+    font-size: 1.2rem;
 }
 
 #sidebar a {
@@ -875,7 +875,7 @@ a.gg:hover {
 
 .hotelRow {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 30px;
 }
 
@@ -889,5 +889,5 @@ a.gg:hover {
 
 .hotelPhoto figure {
     margin: 0;
-   text-align: right;
+    text-align: right;
 } 
