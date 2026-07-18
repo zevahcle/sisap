@@ -889,10 +889,17 @@ a.gg:hover {
 }
 
 .hotelPhoto a figure {
-    display: inline-block;
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Zarovná pravé hrany obrázku a popisku k sobě */
+    text-align: right;     /* Zarovná samotný text uvnitř figcaption doprava */
+    margin: 1em 0;         /* Volitelné: reset/úprava vnějších okrajů */
 }
-
+.hotelPhoto a figure img {
+    display: block;        /* Odstraní spodní mezeru pod obrázkem */
+    max-width: 100%;       /* Zajistí responzivitu */
+    height: auto;
+}
 .hotelPhoto figcaption {
     text-align: right;
 }
