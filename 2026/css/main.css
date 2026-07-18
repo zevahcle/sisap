@@ -872,3 +872,21 @@ a.gg:hover {
     height: 8em;
     width: auto;
 }
+
+.hotelRow {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.hotelInfo {
+    flex: 1;
+}
+
+.hotelPhoto {
+    flex: 0 0 auto;
+}
+
+.hotelPhoto figure {
+    margin: 0;
+}
