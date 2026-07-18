@@ -898,7 +898,7 @@ a.gg:hover {
 .hotelPhoto a figure img {
     display: block;        /* Odstraní spodní mezeru pod obrázkem */
     max-width: 100%;       /* Zajistí responzivitu */
-    height: auto;
+    height: 8em;
 }
 .hotelPhoto figcaption {
     text-align: right;
