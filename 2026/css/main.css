@@ -891,4 +891,8 @@ a.gg:hover {
 .hotelPhoto a figure {
     display: inline-block;
     text-align: right;
-} 
+}
+
+.hotelPhoto figcaption {
+    text-align: right;
+}
