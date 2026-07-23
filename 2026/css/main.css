@@ -904,6 +904,6 @@ a.gg:hover {
     text-align: right;
 }
 
-.inlineDiv div a{
-    display: inline;
+.inlineDiv div a figure{
+    display: inline-block;
 }
