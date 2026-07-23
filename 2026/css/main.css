@@ -903,3 +903,7 @@ a.gg:hover {
 .hotelPhoto figcaption {
     text-align: right;
 }
+
+.inlineDiv div{
+    display: inline;
+}
