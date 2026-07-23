@@ -907,6 +907,9 @@ a.gg:hover {
 .inlineDiv div a figure{
     display: inline-block;
 }
+.inlineDiv div a figure{
+    padding-right: 8px;
+}
 
 .inlineDiv div a figure figcaption{
     text-decoration: none;
