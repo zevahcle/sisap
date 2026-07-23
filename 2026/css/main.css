@@ -907,3 +907,7 @@ a.gg:hover {
 .inlineDiv div a figure{
     display: inline-block;
 }
+
+.inlineDiv div a{
+    text-decoration: none;
+}
