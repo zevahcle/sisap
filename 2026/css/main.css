@@ -908,6 +908,6 @@ a.gg:hover {
     display: inline-block;
 }
 
-.inlineDiv div a{
+.inlineDiv div a figure figcaption{
     text-decoration: none;
 }
