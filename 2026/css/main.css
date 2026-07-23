@@ -904,6 +904,6 @@ a.gg:hover {
     text-align: right;
 }
 
-.inlineDiv div{
+.inlineDiv div a{
     display: inline;
 }
