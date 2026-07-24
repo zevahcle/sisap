@@ -558,6 +558,7 @@ h3,
 h4 {
     /*font-family: "Yanone Kaffeesatz", Arial, Helvetica, sans;*/
     /*font-weight: 700*/
+    font-weight: bold;
 }
 
 code,
