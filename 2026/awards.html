@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv='cache-control' content='no-cache'>
+        <meta http-equiv='expires' content='0'>
+        <meta http-equiv='pragma' content='no-cache'>
+        <title>SISAP 2026</title>
+        <link rel="stylesheet" href="/2026/css/main.css">
+        <link rel="canonical" href="https://www.sisap.org/2026/"> 
+    </head>
+
+    <body> 
+        <div id="page">
+            <header>
+                <img style="width:100%" src="/2026/images/Brno_red.png" alt="Brno" id="topbg" />
+                <a href="/" id="headerlogo">
+                    <img src="/2026/images/sisap.png" alt="SISAP" /><br/>
+                    <big>SISAP 2026</big><br>October 14th-16th<br>Brno, Czechia
+                </a>
+            </header> 
+
+            <main id="main">
+                <hr>
+                <h1>Best Paper Award</h1>
+                <p>
+                <ul>
+                    <li>Richard Connor, Alan Dearle, Ben Claydon and Kamyar Babazadeh<br/>
+                        <strong>Polytopes, Bits and Hashes: Space-Efficient Construction for NN Graphs</strong>
+                    </li>
+                </ul>
+
+                <h1>Best Student Paper Award</h1>
+                <p>
+                <ul>
+                    <li>
+                        Victor Reyes and Stephane Marchand-Maillet<br/>
+                        <strong>Closeness, a Natural Notion of Proximity</strong>
+                    </li>
+                </ul>
+
+                <h1>Best Paper Candidates</h1>
+                The following papers were in consideration for the best paper awards, and will be invited to submit an extended
+                version to the special issue of <a href="https://www.sciencedirect.com/journal/information-systems/">Information Systems</a>:
+
+                <ul>
+                    <li>
+                        Hafiz Saud Arshad, Muhammad Rajabinasab and Arthur Zimek<br/>
+                        <strong>Towards Truly Unsupervised Evaluation of Feature Selection</strong>
+                    </li>
+                    <li>
+                        Victor Reyes and Stephane Marchand-Maillet<br/>
+                        <strong>Closeness, a natural notion of proximity</strong>
+                    </li>
+                    <li>
+                        Richard Connor, Alan Dearle, Ben Claydon and Kamyar Babazadeh<br/>
+                        <strong>Polytopes, Bits and Hashes: Space-Efficient Construction for NN Graphs</strong>
+                    </li>
+                    <li>
+                        Edgar Chavez, Marco Patella and Ilaria Bartolini<br/>
+                        <strong>Calibrated Early Termination: Dataset-Independent PAC Bounds for Graph-Based Nearest Neighbor Search</strong>
+                    </li>
+                    <li>
+                        Fabrizio Angiulli, Francesco De Luca and Fabio Fassetti<br/>
+                        <strong>ADoCL: Anomaly-Aware Dynamic Concept Maintenance for Reliable Continual Learning</strong>
+                    </li>
+                </ul>
+                <h1>SISAP 2026 Indexing Challenge</h1>
+                <h2>Winner of Task 1</h2>
+                <ul>
+                    <li>Tobias Rubel, Richard Wen, Guy Blelloch, Laxman Dhulipala, Lars Gottesbüren, Jakub Łącki and Vahab Mirrokni:
+                        <strong>Fast k-NN Graph Building with Quantized PiPNN and Filtering</strong>
+                    </li>
+                </ul>
+                <h2>Honorable Mention (Task 1)</h2>
+                <ul>
+                    <li>Kenneth Langedal and Henrik Reinstädtler
+                        <strong>Plain Local Search</strong>
+                    </li>
+                </ul>
+                <h2>Winner of Task 2</h2>
+                <ul>
+                    <li>Nico Hezel, Kai Uwe Barthel, Bruno Schilling, Konstantin Schall, Andre Moelle and Klaus Jung
+                        <strong>Fast and Efficient Approximate Nearest Neighbor Search for High-Dimensional LLM Embeddings</strong>
+                    </li>
+                </ul>
+                <h2>Honorable Mention (Task 2)</h2>
+                <ul>
+                    <li>Luis Solsona Sánchez and Luis Fernando Chávez Quevedo
+                        <strong>Memory-Bounded Approximate Nearest Neighbour Search for Dense, MIPS, and Sparse Vectors</strong>
+                    </li>
+                </ul>
+                <h2>Winner of Task 3</h2>
+                <ul>
+                    <li>Silvio Martinico, Franco Maria Nardini, Cosimo Rulli and Rossano Venturini
+                        <strong>A Two-Stage Graph Index for Efficient Learned Sparse Retrieval with kANNolo</strong>
+                    </li>
+                </ul>
+                <h2>Honorable Mention (Task 3)</h2>
+                <ul>
+                    <li>Erik Thordsen and Erich Schubert
+                        <strong>Maximum Inner Product Search with Decoupled Construction- and Query-Measures</strong>
+                    </li>
+                </ul>
+            </main>
+            <nav id="sidebar"></nav> <!-- Placeholder for sidebar -->
+            <aside id="aside-container"></aside> <!-- Placeholder for aside (news) -->
+            <footer id="footer-container"></footer> <!-- Placeholder for footer -->
+        </div>
+        <script>
+            // Load the  from the common html files
+            function loadHTML(id, url) {
+                fetch(url)
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById(id).innerHTML = data;
+                        })
+                        .catch(error => console.error('Error loading the HTML file: ', error));
+            }
+
+            // Load HTML files
+            window.onload = function () {
+//                loadHTML("header-container", "/2026/includes/header.html"); causes weird blinking when the page is loaded
+                loadHTML("footer-container", "/2026/includes/footer.html");
+                loadHTML("aside-container", "/2026/includes/aside.html");
+                loadHTML("sidebar", "/2026/includes/nav.html");
+            }
+        </script>
+    </body>
+
+</html>
